@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src= "angular.min.js"></script>
+<script src="loginController.js"></script>
+</head>
+
+<body>
+<div ng-app="Login" ng-controller="LoginCtrl">
+   <center>
+   <form ng-submit="login()">
+	  username:
+      <input type="text" ng-model="credentials.username" /><br>
+      password:
+      <input type="password" ng-model="credentials.password" /><br>
+      <button type="submit">Login</button>
+	  <hr>
+	  Login Status: {{info}}
+   </form>
+   </center>
+</div>
+</body>
+
+</html>
