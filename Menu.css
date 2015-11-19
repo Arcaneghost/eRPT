@@ -1,0 +1,92 @@
+nav ul {
+	margin:0;
+	padding:0;
+}
+
+nav ul li {
+	-moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+	list-style-type:none;
+	float:left;
+	display:block;
+	width:250px;
+	height:60px;
+	text-align:center;
+	line-height:55px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;	
+}
+
+nav ul liCurrent {
+	background-color:#0b2a50;	/*GU COLOR*/
+	-moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+	list-style-type:none;
+	float:left;
+	display:block;
+	width:250px;
+	height:60px;
+	text-align:center;
+	line-height:55px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	
+}
+
+nav ul li a,
+nav ul liCurrent a
+ {
+	text-decoration:none;
+	color:#FFF;
+}
+
+nav ul li ul.dropdown{
+	min-width: 40px; /* Set width of the dropdown */
+	background: #f2f2f2;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+}
+
+nav ul li:hover ul.dropdown{
+	display: block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown li{
+	display: block;
+}
+	
+
+
+nav ul li ul li {
+	background-color:#0b2a50;	
+}
+
+nav ul li aCurrent {
+	text-decoration:none;
+	color:#D0D0D0;
+	background-color:#c7cfe2;
+}
+
+nav ul >li:nth-last-child(2)
+{
+	float:right;
+}
+
+nav ul > li:last-child
+{
+    float:right;
+}
+
+nav ul li:hover,
+nav ul liCurrent:hover {
+	background-color:#5fa2db;
+}
+
+nav ul li:hover a,
+nav ul liCurrent:hover a {
+	display:block;
+	color:#000;
+	height:100%;
+}
