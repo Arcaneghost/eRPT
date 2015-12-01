@@ -23,7 +23,9 @@ body {
 #IntroParagraph {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#333333;
-	width:100%;
+	width:500px;
+    float:left;
+    padding:10px;
 	}
 
 h1 {
