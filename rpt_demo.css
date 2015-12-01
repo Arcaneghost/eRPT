@@ -24,9 +24,6 @@ h2 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	background: url("eRPT_2.3.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 	border-radius: 12px;
 	margin: auto;
 	width: 400px;
