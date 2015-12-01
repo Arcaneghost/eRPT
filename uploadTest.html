@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;body onload="myFunction()"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input type="file" id="myFile" multiple size="50" onchange="myFunction()"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p id="demo"&gt;&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function myFunction(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var x = document.getElementById("myFile");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var txt = "";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if ('files' in x) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (x.files.length == 0) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>txt = "Select one or more files.";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (var i = 0; i &lt; x.files.length; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>txt += "&lt;br&gt;&lt;strong&gt;" + (i+1) + ". file&lt;/strong&gt;&lt;br&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>var file = x.files[i];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if ('name' in file) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>txt += "name: " + file.name + "&lt;br&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if ('size' in file) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>txt += "size: " + file.size + " bytes &lt;br&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (x.value == "") {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>txt += "Select one or more files.";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>txt += "The files property is not supported by your browser!";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>txt<span class="Apple-converted-space">  </span>+= "&lt;br&gt;The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("demo").innerHTML = txt;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use the Control or the Shift key to select multiple files.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
