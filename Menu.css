@@ -4,7 +4,6 @@ nav ul {
 }
 
 nav ul li {
-	border-right: 2px solid white;
 	-moz-border-radius: 0px;
     -webkit-border-radius: 0px;
 	list-style-type:none;
