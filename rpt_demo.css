@@ -42,3 +42,12 @@ h2 {
 .center {
 	text-align: center;
 }
+
+.StyleTxtField {
+	font-size:14px;
+	width:60%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-left:6px;
+	
+}
