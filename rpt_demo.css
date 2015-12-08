@@ -1,5 +1,5 @@
 body {
-	background: url("college_hall.jpg");
+	background: url("college_hall.jpg") fixed center;
     background-size: cover;
     background-repeat: no-repeat;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -10,15 +10,6 @@ p {
 	color: #181818;
 }
 
-input {
-	color: #181818;
-	line-height: 1.1;
-}
-
-h2 {
-	font-size: 24px;
-}
-
 #login-holder {
 	position: fixed;
 	top: 50%;
@@ -26,11 +17,29 @@ h2 {
 	transform: translate(-50%,-50%);
 	border-radius: 12px;
 	margin: auto;
-	width: 400px;
-	border: 3px solid #1d4e95;
-	background-color: #dde2ee;
+	width: 380px;
+	border: 3px solid #0b2a50;
+	background-color: #e4e8f1;			/* DO NOT CHANGE THIS COLOR */
+	
+}
+
+#logo {
+	display:block;
+	margin:auto;
+	width:248px;
+	height:152px;
 }
 
 .center {
 	text-align: center;
+}
+
+.StyleTxtField {
+	color: #181818;
+	line-height: 1.1;
+	font-size:14px;
+	width:60%;
+	height:auto;
+	padding-left:6px;
+	
 }
