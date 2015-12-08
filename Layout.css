@@ -20,6 +20,12 @@ body {
 	width: 100%;
 }
 
+#IntroParagraph {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333333;
+	width:100%;
+	}
+
 h1 {
 	left:30px;
 	margin:0;
@@ -33,13 +39,20 @@ h2 {
 	width:100%;
 	margin:0;
 	font-family:Arial, Helvetica, sans-serif;
-	font-color:#777;
-		
+	font-color:#777;		
 }
 
 h3 {
-	font-color:red;
-	
+	font-color:red;	
+}
+
+h4 {
+	left:30px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#0b2a50;
+	font-size:24px;
+	width:100%;
 }
 
 h6 {
