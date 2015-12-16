@@ -1,3 +1,11 @@
+/*
+file:	login_page.css
+author:	Richard J. Riley
+date:	12/16/15 (updated)
+desc:	CSS page for login.html and includes link to
+	revised background photo (per MarComm talk)
+*/
+
 body {
 	background: url("attempt2.jpeg") fixed center;
     	background-size: cover;
@@ -19,7 +27,9 @@ p {
 	margin: auto;
 	width: 380px;
 	border: 3px solid #0b2a50;
-	background-color: #e4e8f1;			/* DO NOT CHANGE THIS COLOR */
+	/* DO NOT CHANGE THE BACKGROUND COLOR BELOW */
+	/* CHANGES WILL AFFECT HOLDER'S VISUAL CONSISTENCY */	
+	background-color: #e4e8f1;
 	
 }
 
