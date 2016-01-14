@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<!--
+file:	login.html
+author: Richard J. Riley
+date:	12/16/15 (updated)
+desc:	Login page HTML with DEMO section included for presentation
+-->
+
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="rpt_demo.css">
+	<!-- Will need to restate once CSS files have a directory -->	
+	<link rel="stylesheet" type="text/css" href="login_page.css">
 	<title>eRPT Login | Gonzaga University</title>
+	
+	<!-- Will need to restate these once JS files have a directory -->
 	<script src="angular.min.js"></script>
 	<script src="loginController.js"></script>
 </head>
@@ -24,11 +34,17 @@
 		<input style="background-color: #993333; color: white;" type="submit" value="Submit">
 		<br>
 	</form>
+	
+	<!-- DEMO section below, will remove once work is complete -->
 	<p class="center"> 
 		For assistance, please contact ITS Client Services: <br>
 	    	x5550 | <a href="mailto:techsupport@gonzaga.edu?Subject=eRPT%20Help">techsupport@gonzaga.edu</a>
 		<br>
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		<br>
 		DEMO-ONLY: Login Status: {{info}}
+		<br>
+		<a href="Home.html">Redirect</a>
 	</p>
 </div>
 </body>

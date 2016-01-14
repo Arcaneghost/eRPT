@@ -6,17 +6,19 @@
 <link href="Layout.css" rel="stylesheet" type="text/css">
 <link href="Menu.css" rel="stylesheet" type="text/css">
 <link href="sidebar.css" rel="stylesheet" type="text/css">
+<link href="table.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <div id="NavBar">
 	<nav>
     	<ul>
-        	<liCurrent><a href="">My Binder</a></liCurrent>
-            <li><a href="Evaluation.php">Evaluation</a></li>
-            <li><a href="Settings.php">Workbench</a></li>
-            <li><a href="LogOut.php">Log Out</a></li>
-            <li><a href="Help.php">Help</a></li>
+            <li><a href="Home.html">Home</a></li>
+ 	    <li><a href="myBinder.html">My Binder</a></li>
+            <liCurrent><a href="evaluation.html">Evaluation</a></liCurrent>
+            <li><a href="workbench.html">Workbench</a></li>
+            <li><a href="LogOut.html">Log Out</a></li>
+            <li><a href="help.html">Help</a></li>
         </ul>
     </nav>   
 </div>
@@ -26,8 +28,8 @@
         <li>
             <a href="#">
                 <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text">
-                    1
+                <span class="nav-text" id="hide">
+                    1. Dean's Recommendation
                 </span>
             </a>
           
@@ -36,7 +38,7 @@
             <a href="#">
                 <i class="fa fa-laptop fa-2x"></i>
                 <span class="nav-text">
-                    2
+                    2. Chair Recommendation
                 </span>
             </a>
             
@@ -45,7 +47,7 @@
             <a href="#">
                <i class="fa fa-list fa-2x"></i>
                 <span class="nav-text">
-                    3
+                    3. Committee Recommendation
                 </span>
             </a>
             
@@ -54,7 +56,7 @@
             <a href="#">
                <i class="fa fa-folder-open fa-2x"></i>
                 <span class="nav-text">
-                    4
+                    4. Prior Letters & Recommendations
                 </span>
             </a>
            
@@ -63,7 +65,7 @@
             <a href="#">
                 <i class="fa fa-bar-chart-o fa-2x"></i>
                 <span class="nav-text">
-                    5
+                    5. Self-Eval & Personal Statement
                 </span>
             </a>
         </li>
@@ -71,7 +73,7 @@
             <a href="#">
                 <i class="fa fa-font fa-2x"></i>
                 <span class="nav-text">
-                    6
+                    6. Current Resumé
                 </span>
             </a>
         </li>
@@ -79,7 +81,7 @@
            <a href="#">
                <i class="fa fa-table fa-2x"></i>
                 <span class="nav-text">
-                    7
+                    7. List of Courses
                 </span>
             </a>
         </li>
@@ -87,7 +89,7 @@
            <a href="#">
                 <i class="fa fa-map-marker fa-2x"></i>
                 <span class="nav-text">
-                    8
+                    8. Pro Dev Materials
                 </span>
             </a>
         </li>
@@ -95,20 +97,60 @@
             <a href="#">
                <i class="fa fa-info fa-2x"></i>
                 <span class="nav-text">
-                    9
+                    9. Letters (place sub-category here)
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+               <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                    10. Student Evaluations
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+               <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                    11. List of Supplemental Materials
                 </span>
             </a>
         </li>
     </ul>
 </nav>
 
-</body>
+<div class="page-container">
 
+</div>
+<object data="ReviewChecklist.pdf" type="application/pdf" width="60%" height="500px">
+ 
+  <p>It appears you don't have a PDF plugin for this browser.
+  No biggie... you can <a href="ReviewChecklist.pdf">click here to
+  download the PDF file.</a></p>
+  
+</object>
+
+<textarea rows="40" cols="30" left=1600x placeholder="" style="height: 495px; position:block">
+</textarea>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script type="text/javascript">
+</script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("object").toggle();
+    });
+});
+</script>
+
+</body>
 </html>
+
 
 <script>
 function redirect() {
-  window.location.replace("welcome.php");
+  window.location.replace("welcome.html");
   return false;
 }
 </script>
