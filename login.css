@@ -8,7 +8,7 @@ desc:	CSS page for login.html and includes link to
 */
 
 body {
-	background: url("../images/HemmingsonBackground.jpg") fixed center;
+	background: url("images/HemmingsonBackground.jpg") fixed center;
     	background-size: cover;
     	background-repeat: no-repeat;
 	font-family: Tahoma, Geneva, sans-serif;
