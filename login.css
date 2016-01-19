@@ -1,0 +1,56 @@
+/*
+file:	login.css
+author:	Richard J. Riley
+date:	1/14/16 (updated)
+desc:	CSS page for login.html and includes link to
+	revised background photo (per MarComm talk)
+	[NEED TO ADD PHOTO CREDIT?]
+*/
+
+body {
+	background: url("images/HemmingsonBackground.jpg") fixed center;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+p {
+	font-size: 14px;
+	color: #181818;
+}
+
+#login-holder {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 12px;
+	margin: auto;
+	width: 380px;
+	border: 3px solid #0b2a50;
+	/* DO NOT CHANGE THE BACKGROUND COLOR BELOW */
+	/* CHANGES WILL AFFECT HOLDER'S VISUAL CONSISTENCY */	
+	background-color: #e4e8f1;
+	
+}
+
+#logo {
+	display:block;
+	margin:auto;
+	width:248px;
+	height:152px;
+}
+
+.center {
+	text-align: center;
+}
+
+.StyleTxtField {
+	color: #181818;
+	line-height: 1.1;
+	font-size:14px;
+	width:60%;
+	height:auto;
+	padding-left:6px;
+	
+}
