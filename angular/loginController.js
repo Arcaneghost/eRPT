@@ -7,7 +7,7 @@ app.controller('LoginCtrl', ['$scope', '$http', function($scope, $http) {
   };
   $scope.info = "login first"
   $scope.method = 'POST'
-  $scope.url = 'http://localhost:3000/'
+  $scope.url = 'http://147.222.165.73:443/'
   $scope.login = function () {
 	if($scope.credentials.username && $scope.credentials.password) {
 	  $scope.response = null;
