@@ -47,12 +47,12 @@
   position: relative;
 }
 #cssmenu > ul > li:first-child > a {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 #cssmenu > ul > li:last-child > a {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-bottom: 1px solid #000000;
 }
 #cssmenu > ul > li:hover > a,
