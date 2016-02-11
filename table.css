@@ -6,17 +6,17 @@ body {
     color: #fff;
 }
 .page-container {
+    float:left;
     overflow: hidden;
-    width: 1200px;
-    margin: 100px auto 0 auto;
-    padding-bottom: 60px;
+    width: auto;
+    margin: 10px auto 0 auto;
+    padding-bottom: 10px;
 }
-
 
 .pricing-table {
     float: left;
-    width: 250px;
-    margin: 50px 14px 0 14px;
+    width: 200px;
+    margin: 25px 10px 0 10px;
     background: #f8f8f8;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -34,7 +34,7 @@ body {
 .pricing-table strong { font-weight: 700; color: #3d3d3d; }
 
 .pricing-table-header {
-    padding: 30px 0 25px 0;
+    padding: 10px 0 15px 0;
     background: #3d3d3d;
     -moz-border-radius-topleft: 6px;
     -moz-border-radius-topright: 6px;

@@ -4,7 +4,7 @@
 // Date: January 14, 2016
 // Desc: The purpose of this page is to generate
 the help page. 
----------------------------------------!>
+--------------------------------------->
 
 <!doctype html>
 <html>
@@ -13,14 +13,14 @@ the help page.
 
 <!----------------------------------
 This is the title of the webpage. 
----------------------------------------!>
+--------------------------------------->
 <title>eRPT Help</title>
 
 
 <!----------------------------------
 These are the various references to the .css 
 pages being used by this html file.  
----------------------------------------!>
+--------------------------------------->
 <link href="welcomeHome.css" rel="stylesheet" type="text/css">
 <link href="menu.css" rel="stylesheet" type="text/css">
 </head>
@@ -39,15 +39,16 @@ pages being used by this html file.
     </nav>   
 </div>
 
-<div id="IntroParagraph">
 
 <!----------------------------------
 Source of the image file used for the 
 help page. 
----------------------------------------!>
+--------------------------------------->
 <center>
-<img src="images/smaller_logo.png" height="60%" width="60%">
+<img src="images/smaller_logo.png" height="20%" width="20%">
 </center>
+
+<div id="IntroParagraph">
 
 <center>
 <h1>Welcome to the Help Page!</h1>
@@ -61,15 +62,15 @@ Depending on what type of user you are (Applicant, Evaluator or Organizer) the v
 
 <h2>Creating a Binder</h2>
 In order to create a binder, please click on the My Binder tab at the top of the page. 
-You can also do this by clicking <a href="myBinder.html">here</a>. 
+You can also do this by clicking <button onclick="myBinderRedirect()">Here</button>
 Once this is done, you will be able to create a new binder, or select from previous binders you have created in past years. For detailed instructions on 
 how to create a binder and what contents needed to be added to a specific binder, you can visit the binder help page by clicking
-this <a href="binderHelp.html">link</a>
+this <button onclick="binderHelpRedirect()">Here</button>
 <hr>
 
 <h2>Organizing a Binder</h2>
 If you are accessing the site as an Organizer you can select various binders that have been submitted 
-<a href="workbench.html">here</a>. You can also navigate to the proper page via the tabs above, and selecting workbench. 
+<button onclick="workbenchRedirect()">Here</button> You can also navigate to the proper page via the tabs above, and selecting workbench. 
 These binders represented submitted faculty binders that are ready to passed on
 to the proper evaluators within the eRPT site. If there is a binder that you are expecting to be there but is not, it is
 possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to. 
@@ -77,7 +78,7 @@ possible that the binder has not yet been submitted for evaluation by the facult
 
 <h2>Evaluating a Binder</h2>
 If you are accessing the site as an Evaluator you can select various binders that are available for evaluation
-<a href="evaluation.html">here</a>. You can also navigate to the proper page via the tabs above by selecting Evaluate. 
+<button onclick="evaluationRedirect()">Here</button> You can also navigate to the proper page via the tabs above by selecting Evaluate. 
 These binders represented submitted faculty binders that are ready to evaluated for various positions. 
 If there is a binder that you are expecting to be there but is not, it is
 possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to, or an Organizer
@@ -93,8 +94,23 @@ If this section does not answer your question, then there are additional resourc
 </html>
 
 <script>
-function redirect() {
-  window.location.replace("help.html");
+function myBinderRedirect() {
+  window.location.replace("myBinder.html");
   return false;
 }
+
+function binderHelpRedirect(){
+	window.location.replace("binderHelp.html");
+	return false;
+	}
+	
+function workbenchRedirect(){
+	window.location.replace("workbench.html");
+	return false; 
+	}
+
+function evaluationRedirect(){
+	window.location.replace("evaluation.html");
+	return false;
+	}
 </script>
