@@ -11,10 +11,10 @@ nav ul li {
 	display:block;
 	width: auto;
 	min-width:150px;
-	height:60px;
+	height:48px;
 	text-align:center;
-	line-height:55px;
-	font-family:Arial, Helvetica, sans-serif;
+	line-height:43px;
+	font-family: Tahoma, Geneva, sans-serif;
 	font-size:17px;	
 }
 
@@ -27,10 +27,10 @@ nav ul liCurrent {
 	display:block;
 	width:auto;
 	min-width:150px;
-	height:60px;
+	height:48px;
 	text-align:center;
-	line-height:55px;
-	font-family:Arial, Helvetica, sans-serif;
+	line-height:43px;
+	font-family: Tahoma, Geneva, sans-serif;
 	font-size:17px;
 	
 }
@@ -39,7 +39,7 @@ nav ul li a,
 nav ul liCurrent a
  {
 	text-decoration:none;
-	color:#FFF;
+	color:#FFFFFF;
 }
 
 nav ul li ul.dropdown{
@@ -47,12 +47,11 @@ nav ul li ul.dropdown{
 	background: #f2f2f2;
 	display: none;
 	position: absolute;
-	z-index: 999;
 	left: 0;
 }
 
 nav ul li:hover ul.dropdown{
-	display: block;	/* Display the dropdown */
+	display: block;	 
 }
 
 nav ul li ul.dropdown li{
