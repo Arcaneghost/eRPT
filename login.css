@@ -1,10 +1,9 @@
 /*
 file:	login.css
-author:	Richard J. Riley
+author:	Richard Riley
 date:	1/14/16 (updated)
 desc:	CSS page for login.html and includes link to
-	revised background photo (per MarComm talk)
-	[NEED TO ADD PHOTO CREDIT?]
+		revised background photo (per MarComm talk)
 */
 
 body {
@@ -43,12 +42,10 @@ p {
 }
 
 .StyleTxtField {
-	font-family: Tahoma, Geneva, sans-serif;
 	color: #181818;
 	line-height: 1.1;
 	font-size:14px;
 	width:64%;
 	height:auto;
 	padding-left:6px;
-	
 }
