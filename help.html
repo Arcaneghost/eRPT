@@ -21,7 +21,7 @@ This is the title of the webpage.
 These are the various references to the .css 
 pages being used by this html file.  
 --------------------------------------->
-<link href="welcomeHome.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
 <link href="menu.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -31,14 +31,15 @@ pages being used by this html file.
     	<ul>
         	<li><a href="home.html">Home</a></li>
         	<li><a href="myBinder.html">My Binder</a></li>
+        	<li><a href="organizer.html">Organizer</a></li>
             <li><a href="evaluation.html">Evaluation</a></li>
-            <li><a href="workbench.html">Workbench</a></li>
             <li><a href="logOut.html">Log Out</a></li>
-            <liCurrent><a href="help.html">Help</a></liCurrent>
+            <li><a href="help.html">Help</a></li>
         </ul>
     </nav>   
 </div>
 
+<<<<<<< HEAD
 
 <!----------------------------------
 Source of the image file used for the 
@@ -88,6 +89,49 @@ has not yet passed it on the all the evaluators that will be viewing the binder.
 <h2>Additional Information</h2>
 If this section does not answer your question, then there are additional resources available to you. 
 <hr> 
+=======
+<div id=ContentRegion>
+	<div id=Content>
+		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
+		<div id="IntroParagraph">
+			<center><h1>Welcome to the Help Page!</h1></center>
+
+			<h2>Introduction</h2>
+			<p>Learning any new web application can be tricky, the goal of this page is to make the transition as seamless as possible for new users.
+			Below you will find various documentation on how to create a binder, add files to your binder, submit a binder for review as well as other functionalities. 
+			Depending on what type of user you are (Applicant, Evaluator or Organizer) the various sections will be very helpful.</p>
+			<hr>
+
+			<h2>Creating a Binder</h2>
+			<p>In order to create a binder, please click on the My Binder tab at the top of the page. 
+			You can also do this by clicking <button onclick="myBinderRedirect()">Here</button>
+			Once this is done, you will be able to create a new binder, or select from previous binders you have created in past years. For detailed instructions on 
+			how to create a binder and what contents needed to be added to a specific binder, you can visit the binder help page by clicking
+			this <button onclick="binderHelpRedirect()">Here</button></p>
+			<hr>
+
+			<h2>Organizing a Binder</h2>
+			<p>If you are accessing the site as an Organizer you can select various binders that have been submitted 
+			<button onclick="workbenchRedirect()">Here</button> You can also navigate to the proper page via the tabs above, and selecting workbench. 
+			These binders represented submitted faculty binders that are ready to passed on
+			to the proper evaluators within the eRPT site. If there is a binder that you are expecting to be there but is not, it is
+			possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to.</p>
+			<hr>
+
+			<h2>Evaluating a Binder</h2>
+			<p>If you are accessing the site as an Evaluator you can select various binders that are available for evaluation
+			<button onclick="evaluationRedirect()">Here</button> You can also navigate to the proper page via the tabs above by selecting Evaluate. 
+			These binders represented submitted faculty binders that are ready to evaluated for various positions. 
+			If there is a binder that you are expecting to be there but is not, it is
+			possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to, or an Organizer
+			has not yet passed it on the all the evaluators that will be viewing the binder.</p>
+			<hr>
+			<h2>Additional Information</h2>
+			<p>If this section does not answer your question, then there are additional resources available to you.</p>
+		</div>
+	</div>
+</div>
+>>>>>>> 342d807c2721d3700bb009f525cd968618d76d9d
 
 </body>
 
@@ -105,7 +149,7 @@ function binderHelpRedirect(){
 	}
 	
 function workbenchRedirect(){
-	window.location.replace("workbench.html");
+	window.location.replace("organizer.html");
 	return false; 
 	}
 
