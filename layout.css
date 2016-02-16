@@ -8,11 +8,10 @@ html, body {
 }
 
 #ContentAndSidebarRegion {
-	margin: 0px;
-	padding: 0px;
-	margin-top: 0px;
-	min-width:860px;
-	height:100%;
+	margin-right:12px;
+	min-width:888px;
+	height:inherit;
+	background-color:#FFFFFF;
 }
 
 #ContentRegion {
@@ -24,24 +23,43 @@ html, body {
 	background-color:#FFFFFF;
 }
 
-#Content {
+#ContentNormal{
 	display: block;
 	padding: 12px;
 }
+
+#ContentPDFViewerOnly {
+	margin-left: 300px;
+	height: inherit;
+	border: none;
+}
+
+#ContentPDFWithAnno {
+	margin-left:300px;
+	height:inherit;
+	border:none;
+	width:388px;
+}
+
+#ContentAnnotation {
+	margin-left:688px;
+	width:200px;
+	
+}
+
 
 #IntroParagraph {
 	margin: auto;
 	color:#333333;
 	width:75%;
 }
-	
-/* 
-#PDFViewer {
-	width = 500px;
-	float:left;
-	padding:10px;
+
+iframe {
+	border:0px;
+	width:100%;
+	height:100%;
+	min-height:621px;
 }
-*/
 
 h1 {
 	font-size: 26px;
@@ -55,14 +73,3 @@ h3 {
 	font-size: 24px;
 	color:#FFFFFF;
 }
-
-/* 
-.StyleTxtField {
-	border: 1px solid #666666;
-	border-radius:6px;
-	font-size:16px;
-	width:250px;
-	height:auto;
-	padding-left:6px;
-}
-*/

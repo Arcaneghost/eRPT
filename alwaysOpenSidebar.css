@@ -4,12 +4,12 @@ date:	?
 */
 
 #cssmenu {
-  position: relative;
-  float:left;
   font-family: sans-serif;
   text-align: left;
   line-height: 1;
   width: 300px;
+  height: auto;
+  float:left;
 }
 .align-right {
   float: right;

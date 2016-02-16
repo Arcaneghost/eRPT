@@ -1,9 +1,11 @@
+/* 
 body {
     background: #f8f8f8;
     font-family: Tahoma, Geneva, sans-serif;
     text-align: center;
     color: #fff;
 }
+
 .page-container {
     float:left;
     overflow: hidden;
@@ -11,6 +13,8 @@ body {
     margin: 10px auto 0 auto;
     padding-bottom: 10px;
 }
+*/
+
 
 .pricing-table {
     float: left;
