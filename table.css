@@ -1,4 +1,4 @@
-/* 
+
 body {
     background: #f8f8f8;
     font-family: Tahoma, Geneva, sans-serif;
@@ -9,18 +9,18 @@ body {
 .page-container {
     float:left;
     overflow: hidden;
-    width: auto;
+    width: 80%;
     margin: 10px auto 0 auto;
     padding-bottom: 10px;
 }
-*/
+
 
 
 .pricing-table {
     float: left;
     width: 200px;
     margin: 25px 10px 0 10px;
-    background: #f8f8f8;
+    background: white;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
