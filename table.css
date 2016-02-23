@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body {
     background: #f8f8f8;
@@ -21,6 +22,20 @@ body {
     width: 200px;
     margin: 25px 10px 0 10px;
     background: white;
+=======
+ 
+.container {
+	display: inline-flex;
+	flex-wrap: wrap;
+	text-align: center;
+    padding-bottom: 10px;
+}
+
+.pricing-table {
+    width: 260px;
+    margin: 10px 16px 10px 16px;
+    background: #f8f8f8;
+>>>>>>> eb74611671eb63f35e0c2c5e3cde6f5c1196c88c
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -31,7 +46,7 @@ body {
 
 .pricing-table:hover {
     background: #7795bf;
-    color:#fff;
+    color:#ffffff;
 }
 
 .pricing-table strong { font-weight: 700; color: #3d3d3d; }
@@ -59,8 +74,7 @@ body {
 .pricing-table-space { height: 10px; }
 
 .pricing-table-text {
-    margin: 15px 30px 0 30px;
-    padding: 0 10px 15px 10px;
+    margin: 15px 30px 0 30px;    padding: 0 10px 15px 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
     line-height: 30px;
@@ -69,8 +83,7 @@ body {
 }
 
 .pricing-table-features {
-    margin: 15px 10px 0 10px;
-    padding: 0 10px 15px 10px;
+    margin: 15px 10px 0 10px;    padding: 0 10px 15px 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
     line-height: 30px;
@@ -85,6 +98,7 @@ body {
 .pricing-table-sign-up {
     margin-top: 25px;
     padding-bottom: 30px;
+
 }
 
 .pricing-table-sign-up a {
