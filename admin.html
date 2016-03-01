@@ -6,6 +6,9 @@
 <link href="layout.css" rel="stylesheet" type="text/css">
 <link href="menu.css" rel="stylesheet" type="text/css">
 <link href="adminTable.css" rel="stylesheet" type="text/css">
+<link href="alwaysOpenSidebar.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="alwaysOpenSidebar.js"></script>
 </head>
 <body>
 
@@ -24,85 +27,43 @@
 </div>
 
 <div id=ContentRegion>
-	<br>
-	<form>
-		<table id=AssignmentTable>
-		  <tr>
-			<th>Assign Role..</th>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="role" value="organizer">Organizer</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="role" value="evaluator">Evaluator</td>
-		  </tr>
-		</table>
-	</form>
+	<div id="ContentAndSidebarRegion">
+			<div id='cssmenu'>
+				<ul>
+					<li class='active has-sub'><a href='#'><span>Committees<span></a>
+					  <ul>
+						 <li class='last'><a href='admin.html'><span>View Committees</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>Organizers<span></a>
+					  <ul>
+						 <li class='last'><a href='adminAssignOrganizer.html'><span>Assign Organizers</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
+	</div>
 
-	<form>
-		<table id="AssignmentTable">
-		  <tr>
-			<th>In Department..</th>
+<form>
+	<table id="AssignmentTable" style="width: 50%">
+		<caption align="bottom">
+		<br>
+			<button class="button" style="float:left">Add Committee</button>
+			<button class="button" style="float:right">Remove Checked Committees</button></caption>
+		<th>Committees</th>
 		  </tr>
 		  <tr>
-			<td><input type="radio" name="dept" value="arts">Arts and Sciences</td>
+			<td><input type="checkbox" name="committee" value="Education">Education</td>
 		  </tr>
 		  <tr>
-			<td><input type="radio" name="dept" value="business">Business Administration</td>
+			<td><input type="checkbox" name="committee" value="Business">Business</td>
 		  </tr>
 		  <tr>
-			<td><input type="radio" name="dept" value="education">Education</td>
+			<td><input type="checkbox" name="committee" value="etc">Dynamically generated, will fill</td>
 		  </tr>
-		  <tr>
-			<td><input type="radio" name="dept" value="SEAS">Engineering & Applied Science</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="dept" value="law">Law</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="dept" value="nursing">Nursing & Human Physiology</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="dept" value="proStudies">Professional Studies</td>
-		  </tr>
-		</table>
-	</form>
-	
-	<form>
-		<table id="AssignmentTable">
-		  <tr>
-			<th>To this staff member..</th>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="roleAssignTo" value="rhodes">Amanda Rhodes</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="roleAssignTo" value="rando1">This person in SEAS</td>
-		  </tr>
-		  <tr>
-			<td><input type="radio" name="roleAssignTo" value="rando2">Other people in SEAS</td>
-		  </tr>
-		</table>
-	<form>
-	
-	<form>
-		<table id="AssignmentTable">
-		  <tr>
-			<th>Who will oversee..</th>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="overseen" value="yerion">Kathie Yerion</td>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="overseen" value="bowers">Shawn Bowers</td>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="overseen" value="rando1">Etc.</td>
-		  </tr>
-		</table>
-		<br><br><br><br><br><br>
-		<input type="submit" value="Submit Changes">
-	</form>
+	</table>
+</form>
+
 </div>
 
 </body>
