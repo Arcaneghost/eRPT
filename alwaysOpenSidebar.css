@@ -11,9 +11,7 @@ date:	?
   height: auto;
   float:left;
 }
-.align-right {
-  float: right;
-}
+
 #cssmenu ul {
   margin: 0;
   padding: 0;
