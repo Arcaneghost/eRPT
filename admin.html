@@ -1,3 +1,11 @@
+<!----------------------------------
+// Filename: admin.html
+// Author: Sterling Miller
+// Date: March 27, 2016
+// Desc: The purpose of this page is to generate
+the admin page.  
+--------------------------------------->
+
 <!doctype html>
 <html>
 <head>
@@ -12,6 +20,9 @@
 </head>
 <body>
 
+<!-------------------------------------------
+This is the code that handles the navigation bar. 
+--------------------------------------->
 <div id="NavBar">
 	<nav>
     	<ul>
@@ -26,45 +37,83 @@
     </nav>   
 </div>
 
+
 <div id=ContentRegion>
-	<div id="ContentAndSidebarRegion">
-			<div id='cssmenu'>
-				<ul>
-					<li class='active has-sub'><a href='#'><span>Committees<span></a>
-					  <ul>
-						 <li class='last'><a href='admin.html'><span>View Committees</span></a></li>
-					  </ul>
-				   </li>
-				   <li class='active has-sub'><a href='#'><span>Organizers<span></a>
-					  <ul>
-						 <li class='last'><a href='adminAssignOrganizer.html'><span>Assign Organizers</span></a></li>
-					  </ul>
-				   </li>
-				</ul>
-			</div>
+<!----------------------------------
+This content region is responsible for 
+educating an administrator on how to use 
+the admin page.  
+--------------------------------------->
+	<div id=ContentNormal>
+		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
+		<div id="IntroParagraph">
+			<center><h1>Welcome to the Admin Page!</h1></center>
+
+			<h2>Instructions</h2>
+			<p>As an administrator, the goal of this page is to assign various user groups within the eRPT system.
+			In order to begin, first start by selecting a committee within a particular department or school. Once that
+			is complete, please select which organizers are to be assigned to the previously selected committee. THIS SECTION NEEDS 
+			FURTHER EXPLANATION. </p>
+			
+			
+<!-------------------------------------------
+This is the code that handles the first table.  
+This table is used in helping an administrator
+assign organizers to a particular department or
+school. 
+--------------------------------------->
+	<form>
+		<center><table id="AssignmentTable" style="width: 50%"></center>
+			<th>Committees</th>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Education">Education</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Business">Business</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="etc">Insert Committee Name Here.</td>
+		  	</tr>
+		</table>
+	</form>
+	
+<!-------------------------------------------
+This is the code that handles the second table.  
+This table is used in helping an administrator
+assign organizers to a particular department or
+school. 
+--------------------------------------->
+	<form>
+		<center><table id="AssignmentTable" style="width: 50%"></center>
+			<th>Organizers </th>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="organizer" value="sbowers">Education</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="organizer" value="arhodes">Business</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="organizer" value="randomOrganizers">Insert Organizer Name Here. </td>
+		  	</tr>
+		</table>
+	</form>
+
+	<hr>
+	<button style="float: left;" type="button" onclick="confirmAbort()">Abort</button>
+	<button style="float: right;" type="button" onclick="confirmAlert()">Confirm</button>
+	<p></p>	
+	
+	
+
+		</div>
 	</div>
-
-<form>
-	<table id="AssignmentTable" style="width: 50%">
-		<caption align="bottom">
-		<br>
-			<button class="button" style="float:left">Add Committee</button>
-			<button class="button" style="float:right">Remove Checked Committees</button></caption>
-		<th>Committees</th>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="committee" value="Education">Education</td>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="committee" value="Business">Business</td>
-		  </tr>
-		  <tr>
-			<td><input type="checkbox" name="committee" value="etc">Dynamically generated, will fill</td>
-		  </tr>
-	</table>
-</form>
-
 </div>
+
+
+
+
 
 </body>
 </html>
