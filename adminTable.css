@@ -1,21 +1,25 @@
 table {
-    float: left;
     margin:6px
 }
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 5px;
     text-align: left;
 }
+
 table#AssignmentTable tr:nth-child(even) {
     background-color: #eee;
 }
+
 table#AssignmentTable tr:nth-child(odd) {
    background-color:#fff;
 }
+
 table#AssignmentTable th	{
     background-color: #003f72;
     color: white;
