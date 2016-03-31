@@ -1,6 +1,6 @@
 <!----------------------------------
 // Filename: admin.html
-// Author: Sterling Miller
+// Author: Sterling Miller and Tara Hanson
 // Date: March 27, 2016
 // Desc: The purpose of this page is to generate
 the admin page.  
@@ -91,10 +91,10 @@ school.
 			<th>Organizers </th>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="organizer" value="sbowers">Education</td>
+				<td><input type="checkbox" name="organizer" value="sbowers">Bowers</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="organizer" value="arhodes">Business</td>
+				<td><input type="checkbox" name="organizer" value="arhodes">Rhodes</td>
 		  	</tr>
 		  	<tr>
 				<td><input type="checkbox" name="organizer" value="randomOrganizers">Insert Organizer Name Here. </td>
@@ -128,19 +128,21 @@ function myFunction() {
 
 function addEntryToComm()
 {
-	var person = prompt("Please enter a new Committee", "");
+	var committee = prompt("Please enter a new committee", "");
 	var table = document.getElementById("AssignmentTable");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<input type="checkbox" name=person value="person">person</td>';
+	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee">noworky</td>';
+	document.getElementById("newEntry").innerHTML = committee;
 }
 
 function addEntryToOrg()
 {
+	var organizer = prompt("Please enter a new organizer", "");
 	var table = document.getElementById("AssignmentTable2");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<input type="checkbox" name="Philosophy" value="Philosophy">Philosophy</td>'
+	firstCell.innerHTML = '<input type="checkbox" name="organizer" value="newOrganizer">noworky</td>'
 }
 
 
