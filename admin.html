@@ -68,13 +68,25 @@ school.
 			<th>Committees</th>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="Education">Education</td>
+				<td><input type="checkbox" name="committee" value="School of Education">School of Education</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="Business">Business</td>
+				<td><input type="checkbox" name="committee" value="School of Business">School of Business</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="etc">Insert Committee Name Here.</td>
+				<td><input type="checkbox" name="committee" value="Professional Studies">Professional Studies</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Foley Center">Foley Center</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Engineering and Applied Science">School of Engineering and Applied Science</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Nursing and Human Physiology">School of Nursing and Human Physiology</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Law">School of Law</td>
 		  	</tr>
 		  	<button style="float: center;" type="button" onclick="addEntryToComm()">Add New Entry</button>
 		</table>
@@ -123,6 +135,7 @@ Scripts that are relevant to this page.
 function addEntryToComm()
 {
 	var committee = prompt("Please enter a new committee.", "");
+	var committeeDBValue = committee; 
 	var table = document.getElementById("AssignmentTable");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
@@ -132,6 +145,7 @@ function addEntryToComm()
 function addEntryToOrg()
 {
 	var organizer = prompt("Please enter a new organizer.", "");
+	var organizerZagweb = prompt("Please enter the zagweb ID for this organizer, for instance John Doe would be", "jdoe");
 	var table = document.getElementById("AssignmentTable2");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
