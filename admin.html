@@ -120,31 +120,23 @@ Scripts that are relevant to this page.
 --------------------------------------->
 <script>
 
-function myFunction() {
-    var person = prompt("Please enter a new Committee", "");
-    addEntryToComm();
-    
-}
-
 function addEntryToComm()
 {
-	var committee = prompt("Please enter a new committee", "");
+	var committee = prompt("Please enter a new committee.", "");
 	var table = document.getElementById("AssignmentTable");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee">noworky</td>';
-	document.getElementById("newEntry").innerHTML = committee;
+	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee"></td>' + committee;
 }
 
 function addEntryToOrg()
 {
-	var organizer = prompt("Please enter a new organizer", "");
+	var organizer = prompt("Please enter a new organizer.", "");
 	var table = document.getElementById("AssignmentTable2");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<input type="checkbox" name="organizer" value="newOrganizer">noworky</td>'
+	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee"></td>' + organizer;
 }
-
 
 </script> 
 	
