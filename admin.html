@@ -68,26 +68,84 @@ school.
 			<th>Committees</th>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Education">School of Education</td>
+				<td><input type="checkbox" name="committee" value="Art Department - College of Arts and Sciences">Art Department - College of Arts and Sciences</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Business">School of Business</td>
+				<td><input type="checkbox" name="committee" value="Biology Department - College of Arts and Sciences">Biology Department - College of Arts and Sciences</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="Professional Studies">Professional Studies</td>
+				<td><input type="checkbox" name="committee" value="Chemistry/Biochemistry Department - College of Arts and Sciences">Chemistry/Biochemistry Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Classical Civilizations Department - College of Arts and Sciences">Classical Civilizations - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Communication Studies Department - College of Arts and Sciences">Communication Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="English Department - College of Arts and Sciences">English Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Environmental Studies Department - College of Arts and Sciences">Environmental Studies Department - College of Arts and Sciences</td>
 		  	</tr>
 		  	<tr>
 				<td><input type="checkbox" name="committee" value="Foley Center">Foley Center</td>
 		  	</tr>
 		  	<tr>
+				<td><input type="checkbox" name="committee" value="History Department - College of Arts and Sciences">History Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Math Department - College of Arts and Sciences">Math Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Modern Languages Department - College of Arts and Sciences">Modern Languages Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Music Department - College of Arts and Sciences">Music Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Philosophy Department - College of Arts and Sciences">Philosophy Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Physics Department - College of Arts and Sciences">Physics Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Political Science Department - College of Arts and Sciences">Political Science Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Professional Studies">Professional Studies</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Psychology Department - College of Arts and Sciences">Psychology Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Religious Studies Department - College of Arts and Sciences">Religious Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Business">School of Business</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Education">School of Education</td>
+		  	</tr>
+		  	<tr>
 				<td><input type="checkbox" name="committee" value="School of Engineering and Applied Science">School of Engineering and Applied Science</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="School of Law">School of Law</td>
 		  	</tr>
 		  	<tr>
 				<td><input type="checkbox" name="committee" value="School of Nursing and Human Physiology">School of Nursing and Human Physiology</td>
 		  	</tr>
 		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Law">School of Law</td>
+				<td><input type="checkbox" name="committee" value="Sociology Department - College of Arts and Sciences">Sociology Department - College of Arts and Sciences</td>
 		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Theatre and Dance Department - College of Arts and Sciences">Theatre and Dance Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="committee" value="Women and Gender Studies Department - College of Arts and Sciences">Women and Gender Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	
 		  	<button style="float: center;" type="button" onclick="addEntryToComm()">Add New Entry</button>
 		</table>
 	</form>
@@ -139,13 +197,13 @@ function addEntryToComm()
 	var table = document.getElementById("AssignmentTable");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee"></td>' + committee;
+	firstCell.innerHTML = '<input type="checkbox" name="committee" value="newCommittee"></td>' + committee;
 }
 
 function addEntryToOrg()
 {
 	var organizer = prompt("Please enter a new organizer.", "");
-	var organizerZagweb = prompt("Please enter the zagweb ID for this organizer, for instance John Doe would be", "jdoe");
+	var organizerZagweb = prompt("Please enter the ZAGWEB ID for this organizer, for instance John Doe would be", "jdoe");
 	var table = document.getElementById("AssignmentTable2");
 	var row = table.insertRow(1);
 	var firstCell = row.insertCell(0);
