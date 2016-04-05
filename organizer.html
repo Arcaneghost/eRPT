@@ -1,73 +1,85 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Organizer</title>
-<link href="layout.css" rel="stylesheet" type="text/css">
-<link href="menu.css" rel="stylesheet" type="text/css">
-<link href="table.css" rel="stylesheet" type="text/css">
+<!--
+file:	organizer.ejs
+author:
+date:	January 14, 2016 (updated)
+desc:
+-->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Organizer</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="submissionLines.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-
 <div id="NavBar">
-	<nav>
-    	<ul>
-    		<li><a href="home.html">Home</a></li>
-        	<li><a href="myBinder.html">My Binder</a></li>
-        	<liCurrent><a href="organizer.html">Organizer</a></liCurrent>
-            <li><a href="evaluation.html">Evaluation</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="logOut.html">Log Out</a></li>
-            <li><a href="help.html">Help</a></li>
+    <nav>
+        <ul>
+            <li><a href="https://erpt.gonzaga.edu/home">Home</a></li>
+            <li><a href="https://erpt.gonzaga.edu/myBinder">My Binder</a></li>
+            <licurrent><a href="https://erpt.gonzaga.edu/organizer">Organizer</a></licurrent>
+            <li><a href="https://erpt.gonzaga.edu/evaluation">Evaluation</a></li>
+            <li><a href="https://erpt.gonzaga.edu/logout">rriley, Log Out</a></li>
+            <li><a href="https://erpt.gonzaga.edu/help">Help</a></li>
         </ul>
-    </nav>   
+    </nav>
 </div>
 
-<div id=ContentRegion>
-		<div class=container>
-            <div class="pricing-table">
-                <div class="pricing-table-header">
-                    <h3>John Doe</h3>
-                    <h3>2015</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-                <div class="pricing-table-features">
-                    <p><strong>Applying for:</strong> Reappointment</p>
-                </div>
-                <div class="pricing-table-sign-up">
-                  <p><a href="organizeExample.html">Organize!</a></p>
-                </div>
+<div id="contentRegion">
+    <div class="container">
+        <div class="submissionLine">
+            <div class="submissionLine-contentBox-whole">
+                Organizer Example
             </div>
-
-            <div class="pricing-table">
-                <div class="pricing-table-header">
-                    <h3>Jane Doe</h3>
-                    <h3>2015</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-                <div class="pricing-table-features">
-                    <p><strong>Applying for:</strong> Promotion</p>
-                </div>
-                <div class="pricing-table-sign-up">
-                  <p><a href="">Organize!</a></p>
-                </div>
+            <div class="submissionLine-contentBox-leftHalf">
+                [DEMO
             </div>
-
-            <div class="pricing-table">
-                <div class="pricing-table-header">
-                    <h3>Deborah Jones</h3>
-                    <h3>2015</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-                <div class="pricing-table-features">
-                    <p><strong>Applying for:</strong> Tenure</p>
-                </div>
-                <div class="pricing-table-sign-up">
-                    <p><a href="">Organize!</a></p>
-                </div>
+            <div class="submissionLine-contentBox-rightHalf">
+                <button class="organizeButton-lineItem" onclick="window.location.href='/organizerExample'">OPEN</button>
+                |
+                <button class="submitButton-lineItem" onclick="window.location.href='/home'">SUBMIT</button>
             </div>
-
+            <div class="submissionLine-contentBox-whole">
+                [More details...]
+            </div>
         </div>
+        <div class="submissionLine">
+            <div class="submissionLine-contentBox-whole">
+                [Applicant Name]
+            </div>
+            <div class="submissionLine-contentBox-leftHalf">
+                [Application Title/Type]
+            </div>
+            <div class="submissionLine-contentBox-rightHalf">
+                <button class="organizeButton-lineItem">OPEN</button>
+                |
+                <button class="submitButton-lineItem">SUBMIT</button>
+            </div>
+            <div class="submissionLine-contentBox-whole">
+                [More details...]
+            </div>
+        </div>
+        <div class="submissionLine">
+            <div class="submissionLine-contentBox-whole">
+                [Applicant Name]
+            </div>
+            <div class="submissionLine-contentBox-leftHalf">
+                [Application Title/Type]
+            </div>
+            <div class="submissionLine-contentBox-rightHalf">
+                <button class="organizeButton-lineItem">OPEN</button>
+                |
+                <button class="submitButton-lineItem">SUBMIT</button>
+            </div>
+            <div class="submissionLine-contentBox-whole">
+                [More details...]
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
+
+
+</body></html>
