@@ -1,0 +1,163 @@
+<!----------------------------------
+// Filename: adminView.html
+// Author: Sterling Miller and Tara Hanson
+// Date: April 7, 2016
+// Desc: The purpose of this page is to allow organizers
+		 to view which evaluators are currently members
+		 of their committee.  
+--------------------------------------->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OrganizerView</title>
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
+<link href="adminTable.css" rel="stylesheet" type="text/css">
+<link href="alwaysOpenSidebar.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="alwaysOpenSidebar.js"></script>
+</head>
+<body>
+
+<!-------------------------------------------
+This is the code that handles the navigation bar. 
+--------------------------------------->
+<div id="NavBar">
+	<nav>
+    	<ul>
+    		<li><a href="home.html">Home</a></li>
+        	<li><a href="myBinder.html">My Binder</a></li>
+        	<liCurrent><a href="organizer.html">Organizer</a></liCurrent>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="logOut.html">Log Out</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>   
+</div>
+
+<div id="contentAndSidebarRegion">
+			<div id='cssmenu'>
+				<ul>
+					<li class='active has-sub'><a href='#'><span>Organize Binders<span></a>
+					  <ul>
+						 <li class='last'><a href='organizer.html'><span>Organize Applicant Binders</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>Edit Committees<span></a>
+					  <ul>
+						 <li class='last'><a href='admin.html'><span>Edit Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
+					  <ul>
+						 <li class='last'><a href='organizerView.html'><span>View Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
+
+	<div id=contentPDFViewerOnly> 			
+<!-------------------------------------------
+This is the code that handles the display table.  
+This table shows which evaluators are in the given
+committee.  
+--------------------------------------->
+	<form>
+		<table id="AssignmentTable" style="width:100%">
+			<tr>
+			<th>Committees</th>
+			<th>Organizer</th>
+		  	</tr>
+		  	<tr>
+				<td>Art Department - College of Arts and Sciences</td>
+				<td>Art person</td>
+		  	</tr>
+		  	<tr>
+				<td>Biology Department - College of Arts and Sciences</td>
+				<td>Bio person</td>
+		  	</tr>
+		  	<tr>
+				<td>Chemistry/Biochemistry Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Classical Civilizations - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Communication Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>English Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Environmental Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Foley Center</td>
+		  	</tr>
+		  	<tr>
+				<td>History Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Math Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Modern Languages Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Music Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Philosophy Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Physics Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Political Science Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Professional Studies</td>
+		  	</tr>
+		  	<tr>
+				<td>Psychology Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Religious Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>School of Business</td>
+		  	</tr>
+		  	<tr>
+				<td>School of Education</td>
+		  	</tr>
+		  	<tr>
+				<td>School of Engineering and Applied Science</td>
+				<td>Rhodes</td>
+		  	</tr>
+		  	<tr>
+				<td>School of Law</td>
+		  	</tr>
+		  	<tr>
+				<td>School of Nursing and Human Physiology</td>
+		  	</tr>
+		  	<tr>
+				<td>Sociology Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Theatre and Dance Department - College of Arts and Sciences</td>
+		  	</tr>
+		  	<tr>
+				<td>Women and Gender Studies Department - College of Arts and Sciences</td>
+		  	</tr>
+		</table>
+	</form>
+	
+	</div>
+</div>
+	
+
+</body>
+</html>
