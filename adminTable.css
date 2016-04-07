@@ -7,7 +7,8 @@
 */
 
 table {
-    margin:6px
+    margin:6px;
+    float: left;
 }
 
 table, th, td {

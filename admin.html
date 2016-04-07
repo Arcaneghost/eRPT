@@ -38,14 +38,27 @@ This is the code that handles the navigation bar.
     </nav>   
 </div>
 
-
-<div id=ContentRegion>
+<div id="contentAndSidebarRegion">
+			<div id='cssmenu'>
+				<ul>
+					<li class='active has-sub'><a href='#'><span>Edit<span></a>
+					  <ul>
+						 <li class='last'><a href='admin.html'><span>Committees and Organizers</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
+					  <ul>
+						 <li class='last'><a href='adminAssignOrganizer.html'><span>View</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
 <!----------------------------------
 This content region is responsible for 
 educating an administrator on how to use 
 the admin page.  
 --------------------------------------->
-	<div id=ContentNormal>
+	<div id=contentPDFViewerOnly>
 		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
 		<div id="IntroParagraph">
 			<center><h1>Welcome to the Admin Page!</h1></center>
@@ -64,7 +77,11 @@ assign organizers to a particular department or
 school. 
 --------------------------------------->
 	<form>
-		<center><table id="AssignmentTable" style="width: 50%"></center>
+		<table id="AssignmentTable" style="width:30%">
+			<caption align="top" text-align="center">
+				<br>
+					<button type="button" onclick="addEntryToComm()">Add New Entry</button>
+			</caption>
 			<th>Committees</th>
 		  	</tr>
 		  	<tr>
@@ -145,8 +162,6 @@ school.
 		  	<tr>
 				<td><input type="checkbox" name="committee" value="Women and Gender Studies Department - College of Arts and Sciences">Women and Gender Studies Department - College of Arts and Sciences</td>
 		  	</tr>
-		  	
-		  	<button style="float: center;" type="button" onclick="addEntryToComm()">Add New Entry</button>
 		</table>
 	</form>
 	
@@ -157,7 +172,11 @@ assign organizers to a particular department or
 school. 
 --------------------------------------->
 	<form>
-		<center><table id="AssignmentTable2" style="width: 50%"></center>
+		<table id="AssignmentTable2" style="width:30%">
+			<caption align="top" text-align="center">
+				<br>
+					<button type="button" onclick="addEntryToOrg()">Add New Entry</button>
+			</caption>
 			<th>Organizers </th>
 		  	</tr>
 		  	<tr>
@@ -166,23 +185,15 @@ school.
 		  	<tr>
 				<td><input type="checkbox" name="organizer" value="arhodes">Rhodes</td>
 		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="organizer" value="randomOrganizers">Insert Organizer Name Here. </td>
-		  	</tr>
-		  	<button style="float: center;" type="button" onclick="addEntryToOrg()">Add New Entry</button>
 		</table>
 	</form>
 
-	<hr>
-	<button style="float: left;" type="button" onclick="confirmAbort()">Abort</button>
-	<button style="float: right;" type="button" onclick="confirmAlert()">Confirm</button>
-	<h3></h3/
-	<p></p>	
-	
-
 		</div>
 	</div>
+	<div id="terminatorDiv">
+	</div>
 </div>
+
 
 
 <!----------------------------------
