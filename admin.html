@@ -2,8 +2,9 @@
 // Filename: admin.html
 // Author: Sterling Miller and Tara Hanson
 // Date: March 27, 2016
-// Desc: The purpose of this page is to generate
-the admin page.  
+// Desc: The purpose of this page is to allow
+		 the admins to assign specific organizers
+		 to the various committees.  
 --------------------------------------->
 
 <!doctype html>
@@ -48,7 +49,7 @@ This is the code that handles the navigation bar.
 				   </li>
 				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
 					  <ul>
-						 <li class='last'><a href='adminAssignOrganizer.html'><span>View</span></a></li>
+						 <li class='last'><a href='adminView.html'><span>View</span></a></li>
 					  </ul>
 				   </li>
 				</ul>
@@ -58,7 +59,7 @@ This content region is responsible for
 educating an administrator on how to use 
 the admin page.  
 --------------------------------------->
-	<div id=contentPDFViewerOnly>
+	<div id=contentPDFViewerOnly> 
 		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
 		<div id="IntroParagraph">
 			<center><h1>Welcome to the Admin Page!</h1></center>
@@ -77,11 +78,12 @@ assign organizers to a particular department or
 school. 
 --------------------------------------->
 	<form>
-		<table id="AssignmentTable" style="width:30%">
+		<table id="AssignmentTable" style="width:40%">
 			<caption align="top" text-align="center">
 				<br>
 					<button type="button" onclick="addEntryToComm()">Add New Entry</button>
 			</caption>
+			<tr>
 			<th>Committees</th>
 		  	</tr>
 		  	<tr>
@@ -172,11 +174,12 @@ assign organizers to a particular department or
 school. 
 --------------------------------------->
 	<form>
-		<table id="AssignmentTable2" style="width:30%">
+		<table id="AssignmentTable2" style="width:40%">
 			<caption align="top" text-align="center">
 				<br>
 					<button type="button" onclick="addEntryToOrg()">Add New Entry</button>
 			</caption>
+			<tr>
 			<th>Organizers </th>
 		  	</tr>
 		  	<tr>
@@ -187,13 +190,10 @@ school.
 		  	</tr>
 		</table>
 	</form>
-
-		</div>
+	
 	</div>
-	<div id="terminatorDiv">
-	</div>
+  </div>
 </div>
-
 
 
 <!----------------------------------

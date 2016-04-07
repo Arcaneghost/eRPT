@@ -11,24 +11,48 @@ desc:
     <title>Organizer</title>
     <link href="layout.css" rel="stylesheet" type="text/css">
     <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="alwaysOpenSidebar.css" rel="stylesheet" type="text/css">
     <link href="submissionLines.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="alwaysOpenSidebar.js"></script>
 </head>
 
 <body>
 <div id="NavBar">
     <nav>
         <ul>
-            <li><a href="https://erpt.gonzaga.edu/home">Home</a></li>
-            <li><a href="https://erpt.gonzaga.edu/myBinder">My Binder</a></li>
-            <licurrent><a href="https://erpt.gonzaga.edu/organizer">Organizer</a></licurrent>
-            <li><a href="https://erpt.gonzaga.edu/evaluation">Evaluation</a></li>
-            <li><a href="https://erpt.gonzaga.edu/logout">rriley, Log Out</a></li>
-            <li><a href="https://erpt.gonzaga.edu/help">Help</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/myBinder">My Binder</a></li>
+            <licurrent><a href="/organizer">Organizer</a></licurrent>
+            <li><a href="/evaluation">Evaluation</a></li>
+            <li><a href="/logout">Log Out</a></li>
+            <li><a href="/help">Help</a></li>
         </ul>
     </nav>
 </div>
 
-<div id="contentRegion">
+<div id="contentAndSidebarRegion">
+			<div id='cssmenu'>
+				<ul>
+					<li class='active has-sub'><a href='#'><span>Organize Binders<span></a>
+					  <ul>
+						 <li class='last'><a href='organizer.html'><span>Organize Applicant Binders</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>Edit Committees<span></a>
+					  <ul>
+						 <li class='last'><a href='admin.html'><span>Edit Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
+					  <ul>
+						 <li class='last'><a href='organizerView.html'><span>View Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
+
+<div id="contentPDFViewerOnly">
     <div class="container">
         <div class="submissionLine">
             <div class="submissionLine-contentBox-whole">
