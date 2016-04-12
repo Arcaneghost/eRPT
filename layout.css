@@ -22,6 +22,8 @@ html, body {
 	min-width: calc(100% - 12px);
 	height:100%;
 	background-color:#FFFFFF;
+	overflow: auto;
+	
 }
 
 #contentRegion {
