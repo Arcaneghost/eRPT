@@ -1,0 +1,135 @@
+<!----------------------------------
+// Filename: organizerEdit.html
+// Author: Tara Hanson and Sterling Miller
+// Date: April 11, 2016
+// Desc: The purpose of this page is to allow
+		 the organizers to assign specific evaluators
+		 to the various committees.  
+--------------------------------------->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>organizerEdit</title>
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
+<link href="adminTable.css" rel="stylesheet" type="text/css">
+<link href="adminTable2.css" rel="stylesheet" type="text/css">
+<link href="alwaysOpenSidebar.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="alwaysOpenSidebar.js"></script>
+</head>
+<body>
+
+<!-------------------------------------------
+This is the code that handles the navigation bar. 
+--------------------------------------->
+<div id="NavBar">
+	<nav>
+    	<ul>
+    		<li><a href="home.html">Home</a></li>
+        	<li><a href="myBinder.html">My Binder</a></li>
+        	<liCurrent><a href="organizer.html">Organizer</a></liCurrent>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="logOut.html">Log Out</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>   
+</div>
+
+<div id="contentAndSidebarRegion">
+			<div id='cssmenu'>
+				<ul>
+					<li class='active has-sub'><a href='#'><span>Organize Binders<span></a>
+					  <ul>
+						 <li class='last'><a href='organizer.html'><span>Organize Applicant Binders</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>Edit Committees<span></a>
+					  <ul>
+						 <li class='last'><a href='organizerEdit.html'><span>Edit Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
+					  <ul>
+						 <li class='last'><a href='organizerView.html'><span>View Evaluators & Committees</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
+
+	<div id=contentPDFViewerOnly> 
+		
+<!-------------------------------------------
+This is the code that handles the first table.  
+This table is used in helping an organizer
+assign evaluators to a particular committee.
+--------------------------------------->
+<form>
+	<table id="AssignmentTable" style="width:40%">
+	<!-- Caption and invisible button currently there for formatting only -->
+	<caption align="top" text-align="center">
+				<br>
+					<button type="button" style="background:transparent; border:none; color:transparent;">Add New Entry</button>
+			</caption>
+		<tr>
+		<th>My Committees</th>
+		</tr>
+		<tr>
+			<td>Biology Department - College of Arts and Sciences</td>
+		</tr>
+		<tr>
+			<td>Chemistry/Biochemistry Department - College of Arts and Sciences</td>
+		</tr>
+	</table>
+</form>
+
+<!-------------------------------------------
+This is the code that handles the second table.  
+This table is used in helping an administrator
+assign organizers to a particular department or
+school. 
+--------------------------------------->
+		<form>
+		<table id="AssignmentTable2" style="width:40%">
+			<caption align="top" text-align="center">
+				<br>
+					<button type="button" onclick="addEntryToEval()">Add New Entry</button>
+			</caption>
+			<tr>
+			<th>Evaluators</th>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="evaluator" value="random1">Evaluator 1</td>
+		  	</tr>
+		  	<tr>
+				<td><input type="checkbox" name="evaluator" value="random2">Evaluator 2</td>
+		  	</tr>
+		</table>
+	</form>
+	
+	</div>
+
+
+<!----------------------------------
+Scripts that are relevant to this page.   
+--------------------------------------->
+<script>
+
+function addEntryToEval()
+{
+	var evaluator = prompt("Please enter a new evaluator.", "");
+	var evaluatorZagweb = prompt("Please enter the ZAGWEB ID for this evaluator, for instance John Doe would be", "jdoe");
+	var table = document.getElementById("AssignmentTable2");
+	var row = table.insertRow(1);
+	var firstCell = row.insertCell(0);
+	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="evaluator" value="newEvalautor"></td>' + evaluator;
+}
+
+</script> 
+	
+
+</body>
+</html>
