@@ -1,78 +1,97 @@
 /*
-once working, replace width:-moz-etc with these three and cross-check
-width: -moz-calc(100% - 100px);
-    width: -webkit-calc(100% - 100px);
-    width: calc(100% - 100px);
+file:	layout.css
+author:	RJ Riley
+date:	3/17/16 (modified)
+desc:	Serves as the master layout file for pages on eRPT
 */
 
 html, body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #0b2a50;
-	min-width:960px;
+	min-width:900px;
 	width: 100%;
 	height: 100%;
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
-#ContentAndSidebarRegion {
+#contentAndSidebarRegion {
 	margin-right:12px;
-	min-width:-moz-calc(100% - 12px);
+	min-width: -webkit-calc(100% - 12px);
+	min-width: -moz-calc(100% - 12px);
+	min-width: calc(100% - 12px);
 	height:100%;
 	background-color:#FFFFFF;
+	overflow: auto;
+	
 }
 
-#ContentRegion {
+#contentRegion {
 	margin-left: 12px;
 	margin-right: 12px;
-	min-height:-moz-calc(100% - 48px);
-	width:-moz-calc(100% - 24px);
+	min-height: -webkit-calc(100% - 48px);
+	min-height: -moz-calc(100% - 48px);
+	min-height: calc(100% - 48px);
+	width: -webkit-calc(100% - 24px);
+	width: -moz-calc(100% - 24px);
+	width: calc(100% - 24px);
 	background-color:#FFFFFF;
 }
 
-#ContentNormal{
+#contentNormal{
 	padding: 12px;
 }
 
-#ContentPDFViewerOnly {
+#contentPDFViewerOnly {
 	margin-left: 300px;
-	width:-moz-calc(100% - 300px);
+	width: -webkit-calc(100% - 300px);
+	width: -moz-calc(100% - 300px);
+	width: calc(100% - 300px);
 	height: inherit;
 	border: none;
 }
 
-#ContentPDFWithAnno {
-/* 	margin-left:300px; */
+#contentPDFWithAnno {
 	height:inherit;
 	border:none;
-	width:-moz-calc((100% - 300px) * .80);
-	float:left;
+	width: -webkit-calc((100% - 300px) * .80);
+	width: -moz-calc((100% - 300px) * .80);
+	width: calc((100% - 300px) * .80);
+	float: left;
 }
 
-#ContentAnno {
-/* 	margin-left:-moz-calc(300px + ((100% - 300px) * .80)); */
-width:auto;
-/* 	float:left; */
+#contentAnnotation {
+	float: left;
+	width: -webkit-calc((100% - 300px) * .20);
+	width: -moz-calc((100% - 300px) * .20);
+	width: calc((100% - 300px) * .20);
 }
 
-#IntroParagraph {
+#introParagraph {
 	margin: auto;
 	color:#333333;
 	width:75%;
 }
 
-#TerminatorDiv {
-	clear:both;
+#actionsRegion {
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+#terminatorDiv {
+	clear: both;
+}
+
+#annoFromDB{
+	text-align: left;
 }
 
 iframe {
-	border:0px;
-	width:100%;
-	height:100%;
-	/* min-height:inherit; */
-	/*  THERE SEEMS TO BE A PROBLEM WITH THE SIZING OF THIS ELEMENT AND THE ALIGNMENT OF THE TOP OF THE TEXT BAR REGION,
-		POSSIBLE FIX WOULD BE TO MOVE THE SUBMIT BUTTONS ACROSS AND SEE IF THAT HELPS */
-	float:left;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	float: left;
 }
 
 h1 {
@@ -86,4 +105,97 @@ h2 {
 h3 {
 	font-size: 24px;
 	color:#FFFFFF;
+}
+
+table {
+	background-color:#f1f1f1;
+	table-layout:fixed;
+	width:100%;
+}
+
+td {
+	text-align:center;
+	word-wrap:break-word;
+}
+
+.uploadButton-sidebar {
+	float: left;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border:none;
+}
+
+
+.removeButton-sidebar {
+	float: right;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+}
+
+.saveButton-annotation {
+	width: 85%;
+	max-width: 146px;
+	background-color: #5fa2db;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+}
+
+
+.submitButton-annotation {
+	width: 85%;
+	max-width: 146px;
+	background-color: #993333;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+}
+
+.submitButton-lineItem {
+	width: 90px;
+	border-radius: 3px;
+	background-color: #993333;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 3px;
+	border: none;
+}
+
+.organizeButton-lineItem {
+	width: 90px;
+	border-radius: 3px;
+	background-color: #0b2a50;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 3px;
+	border: none;
+}
+
+.annotationSpace {
+	width: 96%;
+	min-height: 420px;
+	resize: none;
+	padding: 2px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	border-radius: 4px;
+	border: 1px solid #c7c7c7;
 }
