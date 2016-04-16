@@ -3,7 +3,7 @@
 // Author: Tara Hanson
 // Date: March 17, 2016
 // Desc: Stylizing the tables for the admin and
-//		 organizer pages. 
+//		 organizer pages.
 */
 
 table {
@@ -26,7 +26,7 @@ table#AssignmentTable tr:nth-child(even) {
 }
 
 table#AssignmentTable tr:nth-child(odd) {
-   background-color:#fff;
+    background-color:#fff;
 }
 
 table#AssignmentTable th	{
@@ -40,13 +40,13 @@ table#AssignmentTable th	{
 }
 
 .button {
-	background-color: #003f72;
-	color: #FFFFFF;
-	font-size:14px;
-	text-decoration: none;
-	padding: 4px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 3px;
-	border-width: 1px;
+    background-color: #003f72;
+    color: #FFFFFF;
+    font-size:14px;
+    text-decoration: none;
+    padding: 4px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 1px;
 }

@@ -21,217 +21,210 @@
 <script src="alwaysOpenSidebar.js"></script>
 </head>
 <body>
-
 <!-------------------------------------------
-This is the code that handles the navigation bar. 
+This is the code that handles the navigation bar.
 --------------------------------------->
 <div id="NavBar">
-	<nav>
-    	<ul>
-    		<li><a href="home.html">Home</a></li>
-        	<li><a href="myBinder.html">My Binder</a></li>
-        	<li><a href="organizer.html">Organizer</a></li>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="myBinder.html">My Binder</a></li>
+            <li><a href="organizer.html">Organizer</a></li>
             <li><a href="evaluation.html">Evaluation</a></li>
             <liCurrent><a href="admin.html">Admin</a></liCurrent>
-            <li><a href="logOut.html">Log Out</a></li>
+            <li><a href="logout.html">Log Out</a></li>
             <li><a href="help.html">Help</a></li>
         </ul>
-    </nav>   
+    </nav>
 </div>
 
 <div id="contentAndSidebarRegion">
-			<div id='cssmenu'>
-				<ul>
-					<li class='active has-sub'><a href='#'><span>Edit<span></a>
-					  <ul>
-						 <li class='last'><a href='admin.html'><span>Committees and Organizers</span></a></li>
-					  </ul>
-				   </li>
-				   <li class='active has-sub'><a href='#'><span>View Current<span></a>
-					  <ul>
-						 <li class='last'><a href='adminView.html'><span>View</span></a></li>
-					  </ul>
-				   </li>
-				</ul>
-			</div>
-<!----------------------------------
-This content region is responsible for 
-educating an administrator on how to use 
-the admin page.  
---------------------------------------->
-	<div id=contentPDFViewerOnly> 
-		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
-		<div id="introParagraph">
-			<center><h1>Welcome to the Admin Page!</h1></center>
+    <div id='cssMenu'>
+        <ul>
+            <li class='active has-sub'><a href='#'><span>Edit<span></a>
+                <ul>
+                    <li class='last'><a href='admin.html'><span>Committees and Organizers</span></a></li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>View Current<span></a>
+                <ul>
+                    <li class='last'><a href='adminView.html'><span>View</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!----------------------------------
+    This content region is responsible for
+    educating an administrator on how to use
+    the admin page.
+    --------------------------------------->
+    <div id=contentPDFViewerOnly>
+        <br>
+        <center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
+        <div id="IntroParagraph">
+            <center><h1>Welcome to the Admin Page!</h1></center>
 
-			<h2>Instructions</h2>
-			<p>As an administrator, your responsibility is to assign certain staff and/or faculty members to be the
-			organizers for the eRPT process. Not only will you create a comprehensive list of all organizers
-			and committees, you must also associate these organizers with their respective committee(s). 
-			To do this, select a committee from the list below. Then select the organizer(s) that should be associated
-			with the committee and press "Assign." To view the current list of committees and the organizer(s) currently
-			assigned to them, click the "View Current" tab on the left side of the page.
-			</p>
-			
-			
-<!-------------------------------------------
-This is the code that handles the first table.  
-This table is used in helping an administrator
-assign organizers to a particular department or
-school. 
---------------------------------------->
-		<form>
-		<table id="AssignmentTable" style="width:40%">
-			<caption align="top" text-align="center">
-				<br>
-					<button type="button" onclick="addEntryToComm()">Add New Entry</button>
-			</caption>
-			<tr>
-			<th>Committees</th>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Art Department - College of Arts and Sciences">Art Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Biology Department - College of Arts and Sciences">Biology Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Chemistry/Biochemistry Department - College of Arts and Sciences">Chemistry/Biochemistry Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Classical Civilizations Department - College of Arts and Sciences">Classical Civilizations - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Communication Studies Department - College of Arts and Sciences">Communication Studies Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="English Department - College of Arts and Sciences">English Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Environmental Studies Department - College of Arts and Sciences">Environmental Studies Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Foley Center">Foley Center</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="History Department - College of Arts and Sciences">History Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Math Department - College of Arts and Sciences">Math Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Modern Languages Department - College of Arts and Sciences">Modern Languages Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Music Department - College of Arts and Sciences">Music Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Philosophy Department - College of Arts and Sciences">Philosophy Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Physics Department - College of Arts and Sciences">Physics Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Political Science Department - College of Arts and Sciences">Political Science Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Professional Studies">Professional Studies</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Psychology Department - College of Arts and Sciences">Psychology Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Religious Studies Department - College of Arts and Sciences">Religious Studies Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Business">School of Business</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Education">School of Education</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Engineering and Applied Science">School of Engineering and Applied Science</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Law">School of Law</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="School of Nursing and Human Physiology">School of Nursing and Human Physiology</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Sociology Department - College of Arts and Sciences">Sociology Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Theatre and Dance Department - College of Arts and Sciences">Theatre and Dance Department - College of Arts and Sciences</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="committee" value="Women and Gender Studies Department - College of Arts and Sciences">Women and Gender Studies Department - College of Arts and Sciences</td>
-		  	</tr>
-		</table>
-	</form>
-	
-<!-------------------------------------------
-This is the code that handles the second table.  
-This table is used in helping an administrator
-assign organizers to a particular department or
-school. 
---------------------------------------->
-		<form>
-		<table id="AssignmentTable2" style="width:40%">
-			<caption align="top" text-align="center">
-				<br>
-					<button type="button" onclick="addEntryToOrg()">Add New Entry</button>
-			</caption>
-			<tr>
-			<th>Organizers </th>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="organizer" value="sbowers">Bowers</td>
-		  	</tr>
-		  	<tr>
-				<td><input type="checkbox" name="organizer" value="arhodes">Rhodes</td>
-		  	</tr>
-		</table>
-	</form>
+            <h2>Instructions</h2>
+            <p>As an administrator, your responsibility is to assign certain staff and/or faculty members to be the
+                organizers for the eRPT process. Not only will you create a comprehensive list of all organizers
+                and committees, you must also associate these organizers with their respective committee(s).
+                To do this, select a committee from the list below. Then select the organizer(s) that should be associated
+                with the committee and press "Assign." To view the current list of committees and the organizer(s) currently
+                assigned to them, click the "View Current" tab on the left side of the page.
+            </p>
 
-<br>
-&nbsp;
-&nbsp;
-&nbsp;
-<button class="button">Commit</button>
-	
-	</div>
-  		
-	</div>
+
+            <!-------------------------------------------
+            This is the code that handles the first table.
+            This table is used in helping an administrator
+            assign organizers to a particular department or
+            school.
+            --------------------------------------->
+            <form>
+                <table id="AssignmentTable" style="width:40%">
+                    <caption align="top" text-align="center">
+                        <br>
+                        <button type="button" onclick="addEntryToComm()">Add New Entry</button>
+                    </caption>
+                    <tr>
+                        <th>Committees</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Art Department - College of Arts and Sciences">Art Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Biology Department - College of Arts and Sciences">Biology Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Chemistry/Biochemistry Department - College of Arts and Sciences">Chemistry/Biochemistry Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Classical Civilizations Department - College of Arts and Sciences">Classical Civilizations - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Communication Studies Department - College of Arts and Sciences">Communication Studies Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="English Department - College of Arts and Sciences">English Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Environmental Studies Department - College of Arts and Sciences">Environmental Studies Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Foley Center">Foley Center</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="History Department - College of Arts and Sciences">History Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Math Department - College of Arts and Sciences">Math Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Modern Languages Department - College of Arts and Sciences">Modern Languages Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Music Department - College of Arts and Sciences">Music Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Philosophy Department - College of Arts and Sciences">Philosophy Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Physics Department - College of Arts and Sciences">Physics Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Political Science Department - College of Arts and Sciences">Political Science Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Professional Studies">Professional Studies</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Psychology Department - College of Arts and Sciences">Psychology Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Religious Studies Department - College of Arts and Sciences">Religious Studies Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="School of Business">School of Business</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="School of Education">School of Education</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="School of Engineering and Applied Science">School of Engineering and Applied Science</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="School of Law">School of Law</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="School of Nursing and Human Physiology">School of Nursing and Human Physiology</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Sociology Department - College of Arts and Sciences">Sociology Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Theatre and Dance Department - College of Arts and Sciences">Theatre and Dance Department - College of Arts and Sciences</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="committee" value="Women and Gender Studies Department - College of Arts and Sciences">Women and Gender Studies Department - College of Arts and Sciences</td>
+                    </tr>
+                </table>
+            </form>
+
+            <!-------------------------------------------
+            This is the code that handles the second table.
+            This table is used in helping an administrator
+            assign organizers to a particular department or
+            school.
+            --------------------------------------->
+            <form>
+                <table id="AssignmentTable2" style="width:40%">
+                    <caption align="top" text-align="center">
+                        <br>
+                        <button type="button" onclick="addEntryToOrg()">Add New Entry</button>
+                    </caption>
+                    <tr>
+                        <th>Organizers </th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="organizer" value="sbowers">Bowers</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="organizer" value="arhodes">Rhodes</td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</div>
 
 
 <!----------------------------------
-Scripts that are relevant to this page.   
+Scripts that are relevant to this page.
 --------------------------------------->
 <script>
 
-function addEntryToComm()
-{
-	var committee = prompt("Please enter a new committee.", "");
-	var committeeDBValue = committee; 
-	var table = document.getElementById("AssignmentTable");
-	var row = table.insertRow(1);
-	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<input type="checkbox" name="committee" value="newCommittee"></td>' + committee;
-}
+    function addEntryToComm()
+    {
+        var committee = prompt("Please enter a new committee.", "");
+        var committeeDBValue = committee;
+        var table = document.getElementById("AssignmentTable");
+        var row = table.insertRow(1);
+        var firstCell = row.insertCell(0);
+        firstCell.innerHTML = '<input type="checkbox" name="committee" value="newCommittee"></td>' + committee;
+    }
 
-function addEntryToOrg()
-{
-	var organizer = prompt("Please enter a new organizer.", "");
-	var organizerZagweb = prompt("Please enter the ZAGWEB ID for this organizer, for instance John Doe would be", "jdoe");
-	var table = document.getElementById("AssignmentTable2");
-	var row = table.insertRow(1);
-	var firstCell = row.insertCell(0);
-	firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee"></td>' + organizer;
-}
+    function addEntryToOrg()
+    {
+        var organizer = prompt("Please enter a new organizer.", "");
+        var organizerZagweb = prompt("Please enter the username for this organizer, for instance John Doe would be", "jdoe");
+        var table = document.getElementById("AssignmentTable2");
+        var row = table.insertRow(1);
+        var firstCell = row.insertCell(0);
+        firstCell.innerHTML = '<td id="newEntry"><input type="checkbox" name="committee" value="newCommittee"></td>' + organizer;
+    }
 
-</script> 
-	
+</script>	
 
 </body>
 </html>

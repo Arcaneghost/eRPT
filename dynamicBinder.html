@@ -1,0 +1,70 @@
+<!--
+file:	dynamicBinder
+author: Eric Jobes
+date:	31 Mar 2016
+desc:   Dynamically retrieve binders from database
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Binder</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="submissionLines.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id=navBar>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <liCurrent><a href="myBinder.html">My Binder</a></liCurrent>
+            <li><a href="organizer.html">Organizer</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="logout.html">Log Out</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id=contentRegion>
+        <div class=container>
+            <div class="submissionLine">
+                <div class="submissionLine-contentBox-whole">
+                    Create New Binder
+                </div>
+                <div class="submissionLine-contentBox-rightHalf">
+                    <button class="organizeButton-lineItem" onclick="window.location.href='/newBinder'">CREATE</button>
+                <div class="submissionLine-contentBox-whole">
+                    New binders appear on top in descending order by time created.
+                </div>
+                </div>
+            </div>
+            <!-- show new binders on top by starting at binders.length-1, go to 0 -->
+                <div class="submissionLine">
+                    <div class="submissionLine-contentBox-whole">
+                        Binder Name:
+                        <br>
+                        Binder ID:
+                    </div>
+                    <div class="submissionLine-contentBox-leftHalf">
+                        [Application Title/Type]
+                    </div>
+                    <div class="submissionLine-contentBox-rightHalf">
+                        <button class="organizeButton-lineItem" onclick="window.location.href='/Binder'">OPEN</button>
+                        |
+                        <button class="submitButton-lineItem" onclick="return confirm('Are you sure you want to delete this binder?')">DELETE</button>
+                    </div>
+                    <div class="submissionLine-contentBox-whole">
+                        [More details...]
+                    </div>
+                </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>

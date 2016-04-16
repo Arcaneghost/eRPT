@@ -24,7 +24,9 @@ nav ul li {
 	text-align:center;
 	line-height:43px;
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size:17px;	
+	font-size:17px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 nav ul li a

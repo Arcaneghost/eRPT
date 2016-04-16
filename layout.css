@@ -23,7 +23,6 @@ html, body {
 	height:100%;
 	background-color:#FFFFFF;
 	overflow: auto;
-	
 }
 
 #contentRegion {
@@ -36,6 +35,7 @@ html, body {
 	width: -moz-calc(100% - 24px);
 	width: calc(100% - 24px);
 	background-color:#FFFFFF;
+	overflow: auto;
 }
 
 #contentNormal{
@@ -51,7 +51,18 @@ html, body {
 	border: none;
 }
 
-#contentPDFWithAnno {
+#contentPDFWithAnno,
+#contentPDFWithAnno0,
+#contentPDFWithAnno1,
+#contentPDFWithAnno2,
+#contentPDFWithAnno3,
+#contentPDFWithAnno4,
+#contentPDFWithAnno5,
+#contentPDFWithAnno6,
+#contentPDFWithAnno7,
+#contentPDFWithAnno8,
+#contentPDFWithAnno9,
+#contentPDFWithAnno10{
 	height:inherit;
 	border:none;
 	width: -webkit-calc((100% - 300px) * .80);
@@ -108,7 +119,7 @@ h3 {
 }
 
 table {
-	background-color:#f1f1f1;
+	background-color:rgba(255,255,255,0);
 	table-layout:fixed;
 	width:100%;
 }
@@ -118,8 +129,17 @@ td {
 	word-wrap:break-word;
 }
 
+.link-sidebar {
+
+}
+
+input {
+	visibility: hidden;
+
+}
+
 .uploadButton-sidebar {
-	float: left;
+	text-align: center;
 	background-color: #777777;
 	color: #FFFFFF;
 	font-size: 14px;
@@ -128,7 +148,18 @@ td {
 	border-radius: 3px;
 	border:none;
 }
+.editButton-sidebar {
+	float: left;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border:none;
+	width: 62px;
 
+}
 
 .removeButton-sidebar {
 	float: right;
@@ -139,6 +170,7 @@ td {
 	padding: 4px;
 	border-radius: 3px;
 	border: none;
+	width: 62px;
 }
 
 .saveButton-annotation {
@@ -154,7 +186,7 @@ td {
 }
 
 
-.submitButton-annotation {
+.button-annotation {
 	width: 85%;
 	max-width: 146px;
 	background-color: #993333;
@@ -173,7 +205,7 @@ td {
 	color: #FFFFFF;
 	font-size: 14px;
 	text-decoration: none;
-	padding: 3px;
+	padding: 4px;
 	border: none;
 }
 
@@ -184,7 +216,7 @@ td {
 	color: #FFFFFF;
 	font-size: 14px;
 	text-decoration: none;
-	padding: 3px;
+	padding: 4px;
 	border: none;
 }
 
@@ -196,6 +228,6 @@ td {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
 	color: #000000;
-	border-radius: 4px;
+	border-radius: 3px;
 	border: 1px solid #c7c7c7;
 }
