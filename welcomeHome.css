@@ -1,0 +1,62 @@
+/*
+// Filename: welcomeHome.html
+// Author: Sterling Miller and Tara Hanson
+// Date: January 14, 2016
+// Desc: This file provides the .css layout for the home.html page and the 
+		 help.html page. 
+*/
+/* 
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #0b2a50;
+	width: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+ */
+
+#Holder {
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 21px;
+	width:100%;
+}
+
+#IntroParagraph {
+	display: block;
+	margin: 0 auto;
+	color:#333333;
+	background-color: white;
+	width:800px;
+    padding:10px;
+    border-radius: 25px;
+    border: 3px solid #9a3b26;
+	}
+
+h1 {
+	left:30px;
+	margin:0;
+	color:black;
+	width:100%;
+
+}
+
+h2 {
+	width:100%;
+	margin:0;
+	font-color:#777777;		
+}
+
+.StyleTxtField {
+	border: 1px solid #666666;
+	border-radius:6px;
+	font-size:16px;
+	width:250px;
+	height:auto;
+	padding-left:6px;
+	
+}
+

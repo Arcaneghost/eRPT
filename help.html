@@ -1,76 +1,115 @@
+<!----------------------------------
+// Filename: help.html
+// Author: Sterling Miller
+// Date: January 14, 2016
+// Desc: The purpose of this page is to generate
+the help page. 
+--------------------------------------->
+
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
+
+<!----------------------------------
+This is the title of the webpage. 
+--------------------------------------->
 <title>eRPT Help</title>
-<link href="help.css" rel="stylesheet" type="text/css">
-<link href="Menu.css" rel="stylesheet" type="text/css">
+
+
+<!----------------------------------
+These are the various references to the .css 
+pages being used by this html file.  
+--------------------------------------->
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="menu.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <div id="NavBar">
 	<nav>
     	<ul>
-        	<li><a href="Home.html">Home</a></li>
+        	<li><a href="home.html">Home</a></li>
         	<li><a href="myBinder.html">My Binder</a></li>
+        	<li><a href="organizer.html">Organizer</a></li>
             <li><a href="evaluation.html">Evaluation</a></li>
-            <li><a href="workbench.html">Workbench</a></li>
-            <li><a href="LogOut.html">Log Out</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="logOut.html">Log Out</a></li>
             <liCurrent><a href="help.html">Help</a></liCurrent>
         </ul>
     </nav>   
 </div>
 
-<div id="IntroParagraph">
-<center>
-<img src="smaller_logo.png" height="60%" width="60%">
-</center>
 
-<center>
-<h1>Welcome to the Help Page!</h1>
-</center>
+<!----------------------------------
+This entire content region below is designated 
+for helping instruct the user using text on 
+how to navigate the eRPT site.   
+--------------------------------------->
+<div id=contentRegion>
+	<div id=contentNormal>
+		<center><img src="images/eRPT_2.2.png" width=124px height=71px"></center>
+		<div id="introParagraph">
+			<center><h1>Welcome to the Help Page!</h1></center>
 
-<h2>Introduction</h2>
-Learning any new web application can be tricky, the goal of this page is to make the transition as seamless as possible for new users.
-Below you will find various documentation on how to create a binder, add files to your binder, submit a binder for review as well as other functionalities. 
-Depending on what type of user you are (Applicant, Evaluator or Organizer) the various sections will be very helpful. <div>
-<hr>
+			<h2>Introduction</h2>
+			<p>Learning any new web application can be tricky, the goal of this page is to make the transition as seamless as possible for new users.
+			Below you will find various documentation on how to create a binder, add files to your binder, submit a binder for review as well as other functionalities. 
+			Depending on what type of user you are (Applicant, Evaluator or Organizer) the various sections will be very helpful.</p>
+			<hr>
 
-<h2>Creating a Binder</h2>
-In order to create a binder, please click on the My Binder tab at the top of the page. 
-You can also do this by clicking <a href="myBinder.html">here</a>. 
-Once this is done, you will be able to create a new binder, or select from previous binders you have created in past years. For detailed instructions on 
-how to create a binder and what contents needed to be added to a specific binder, you can visit the binder help page by clicking
-this <a href="binderHelp.html">link</a>
-<hr>
+			<h2>Creating a Binder</h2>
+			<p>In order to create a binder, please click on the My Binder tab at the top of the page. 
+			You can also do this by clicking <button onclick="myBinderRedirect()">Here</button>
+			Once this is done, you will be able to create a new binder, or select from previous binders you have created in past years. For detailed instructions on 
+			how to create a binder and what contents needed to be added to a specific binder, you can visit the binder help page by clicking
+			this <button onclick="binderHelpRedirect()">Here</button></p>
+			<hr>
 
-<h2>Organizing a Binder</h2>
-If you are accessing the site as an Organizer you can select various binders that have been submitted 
-<a href="workbench.html">here</a>. You can also navigate to the proper page via the tabs above, and selecting workbench. 
-These binders represented submitted faculty binders that are ready to passed on
-to the proper evaluators within the eRPT site. If there is a binder that you are expecting to be there but is not, it is
-possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to. 
-<hr>
+			<h2>Organizing a Binder</h2>
+			<p>If you are accessing the site as an Organizer you can select various binders that have been submitted 
+			<button onclick="workbenchRedirect()">Here</button> You can also navigate to the proper page via the tabs above, and selecting workbench. 
+			These binders represented submitted faculty binders that are ready to passed on
+			to the proper evaluators within the eRPT site. If there is a binder that you are expecting to be there but is not, it is
+			possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to.</p>
+			<hr>
 
-<h2>Evaluating a Binder</h2>
-If you are accessing the site as an Evaluator you can select various binders that are available for evaluation
-<a href="evaluation.html">here</a>. You can also navigate to the proper page via the tabs above by selecting Evaluate. 
-These binders represented submitted faculty binders that are ready to evaluated for various positions. 
-If there is a binder that you are expecting to be there but is not, it is
-possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to, or an Organizer
-has not yet passed it on the all the evaluators that will be viewing the binder. 
-<hr>
-<h2>Additional Information</h2>
-If this section does not answer your question, then there are additional resources available to you. 
-<hr> 
+			<h2>Evaluating a Binder</h2>
+			<p>If you are accessing the site as an Evaluator you can select various binders that are available for evaluation
+			<button onclick="evaluationRedirect()">Here</button> You can also navigate to the proper page via the tabs above by selecting Evaluate. 
+			These binders represented submitted faculty binders that are ready to evaluated for various positions. 
+			If there is a binder that you are expecting to be there but is not, it is
+			possible that the binder has not yet been submitted for evaluation by the faculty member who it belongs to, or an Organizer
+			has not yet passed it on the all the evaluators that will be viewing the binder.</p>
+			<hr>
+			<h2>Additional Information</h2>
+			<p>If this section does not answer your question, then there are additional resources available to you.</p>
+		</div>
+	</div>
+</div>
 
 </body>
 
 </html>
 
 <script>
-function redirect() {
-  window.location.replace("help.html");
+function myBinderRedirect() {
+  window.location.replace("myBinder.html");
   return false;
 }
+
+function binderHelpRedirect(){
+	window.location.replace("binderHelp.html");
+	return false;
+	}
+	
+function workbenchRedirect(){
+	window.location.replace("organizer.html");
+	return false; 
+	}
+
+function evaluationRedirect(){
+	window.location.replace("evaluation.html");
+	return false;
+	}
 </script>

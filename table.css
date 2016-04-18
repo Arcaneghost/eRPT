@@ -1,22 +1,19 @@
-body {
-    background: #f8f8f8;
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-    background: url(../img/bg.jpg) left top repeat;
-    text-align: center;
-    color: #fff;
+/*
+file:	table.css
+author:	Eric Jobes
+date:	?
+desc:	CSS for older style content management pages
+*/
+.container {
+	display: inline-flex;
+	flex-wrap: wrap;
+	text-align: center;
+    padding-bottom: 10px;
 }
-.page-container {
-    overflow: hidden;
-    width: 1200px;
-    margin: 100px auto 0 auto;
-    padding-bottom: 60px;
-}
-
 
 .pricing-table {
-    float: left;
-    width: 250px;
-    margin: 50px 14px 0 14px;
+    width: 260px;
+    margin: 5px 8px 5px 8px;
     background: #f8f8f8;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -28,13 +25,13 @@ body {
 
 .pricing-table:hover {
     background: #7795bf;
-    color:#fff;
+    color:#ffffff;
 }
 
 .pricing-table strong { font-weight: 700; color: #3d3d3d; }
 
 .pricing-table-header {
-    padding: 30px 0 25px 0;
+    padding: 1px 0 1px 0;
     background: #3d3d3d;
     -moz-border-radius-topleft: 6px;
     -moz-border-radius-topright: 6px;
@@ -56,8 +53,8 @@ body {
 .pricing-table-space { height: 10px; }
 
 .pricing-table-text {
-    margin: 15px 30px 0 30px;
-    padding: 0 10px 15px 10px;
+    margin: 5px 10px 0 10px;
+    padding: 0 100px 15px 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
     line-height: 30px;
@@ -66,8 +63,7 @@ body {
 }
 
 .pricing-table-features {
-    margin: 15px 10px 0 10px;
-    padding: 0 10px 15px 10px;
+    margin: 15px 10px 0 10px;    padding: 0 10px 15px 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
     line-height: 30px;
@@ -82,6 +78,7 @@ body {
 .pricing-table-sign-up {
     margin-top: 25px;
     padding-bottom: 30px;
+
 }
 
 .pricing-table-sign-up a {

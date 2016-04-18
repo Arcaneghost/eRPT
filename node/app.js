@@ -9,7 +9,8 @@ app.use(express.static(__dirname));
 
 app.get('/', function(req, res) {
   console.log('new method: GET');
-  res.sendFile('LoginTester.html' , { root : __dirname});
+  res.sendFile('login.html' , { root : __dirname});
+  
 });
 
 app.post('/', function(req, res) {
@@ -32,6 +33,6 @@ app.post('/', function(req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log('Listening on port 3000');
+app.listen(443, function() {
+  console.log('Listening on port 443');
 });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 file:	login.html
-author: Richard J. Riley
+author: Richard Riley
 date:	12/16/15 (updated)
 desc:	Login page HTML with DEMO section included for presentation
 -->
@@ -9,8 +9,8 @@ desc:	Login page HTML with DEMO section included for presentation
 <html>
 <head>
 	<!-- Will need to restate once CSS files have a directory -->	
-	<link rel="stylesheet" type="text/css" href="login_page.css">
-	<title>eRPT Login | Gonzaga University</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>eRPT Login</title>
 	
 	<!-- Will need to restate these once JS files have a directory -->
 	<script src="angular.min.js"></script>
@@ -20,32 +20,20 @@ desc:	Login page HTML with DEMO section included for presentation
 <body>
 <div id="login-holder" ng-app="Login" ng-controller="LoginCtrl">
 	<br>
-	<img id="logo" src="eRPT_2.2.png">
+	<img id="logo" src="images/eRPT_2.2.png">
 	<br>
 	<form class="center" ng-submit="login()">
-		<br>
+		<p></p>
 		<input type="text" name="uname" maxlength="64" autofocus placeholder="Username" class="StyleTxtField"
 		required ng-model="credentials.username">
-		<br>
+		<p></p>
 		<input type="password" name="pswd" maxlength="64" placeholder="Password" class="StyleTxtField" required 
 		ng-model="credentials.password">
-		<br>
-		<br>
-		<input style="background-color: #993333; color: white;" type="submit" value="Submit">
-		<br>
+		<p></p>
+		<input class="submit" type="submit" value="Submit">
+		<p></p>
+		
 	</form>
-	
-	<!-- DEMO section below, will remove once work is complete -->
-	<p class="center"> 
-		For assistance, please contact ITS Client Services: <br>
-	    	x5550 | <a href="mailto:techsupport@gonzaga.edu?Subject=eRPT%20Help">techsupport@gonzaga.edu</a>
-		<br>
-		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-		<br>
-		DEMO-ONLY: Login Status: {{info}}
-		<br>
-		<a href="Home.html">Redirect</a>
-	</p>
 </div>
 </body>
 </html>

@@ -1,0 +1,233 @@
+/*
+file:	layout.css
+author:	RJ Riley
+date:	3/17/16 (modified)
+desc:	Serves as the master layout file for pages on eRPT
+*/
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #0b2a50;
+	min-width:900px;
+	width: 100%;
+	height: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#contentAndSidebarRegion {
+	margin-right:12px;
+	min-width: -webkit-calc(100% - 12px);
+	min-width: -moz-calc(100% - 12px);
+	min-width: calc(100% - 12px);
+	height:100%;
+	background-color:#FFFFFF;
+	overflow: auto;
+}
+
+#contentRegion {
+	margin-left: 12px;
+	margin-right: 12px;
+	min-height: -webkit-calc(100% - 48px);
+	min-height: -moz-calc(100% - 48px);
+	min-height: calc(100% - 48px);
+	width: -webkit-calc(100% - 24px);
+	width: -moz-calc(100% - 24px);
+	width: calc(100% - 24px);
+	background-color:#FFFFFF;
+	overflow: auto;
+}
+
+#contentNormal{
+	padding: 12px;
+}
+
+#contentPDFViewerOnly {
+	margin-left: 300px;
+	width: -webkit-calc(100% - 300px);
+	width: -moz-calc(100% - 300px);
+	width: calc(100% - 300px);
+	height: inherit;
+	border: none;
+}
+
+#contentPDFWithAnno,
+#contentPDFWithAnno0,
+#contentPDFWithAnno1,
+#contentPDFWithAnno2,
+#contentPDFWithAnno3,
+#contentPDFWithAnno4,
+#contentPDFWithAnno5,
+#contentPDFWithAnno6,
+#contentPDFWithAnno7,
+#contentPDFWithAnno8,
+#contentPDFWithAnno9,
+#contentPDFWithAnno10{
+	height:inherit;
+	border:none;
+	width: -webkit-calc((100% - 300px) * .80);
+	width: -moz-calc((100% - 300px) * .80);
+	width: calc((100% - 300px) * .80);
+	float: left;
+}
+
+#contentAnnotation {
+	float: left;
+	width: -webkit-calc((100% - 300px) * .20);
+	width: -moz-calc((100% - 300px) * .20);
+	width: calc((100% - 300px) * .20);
+}
+
+#introParagraph {
+	margin: auto;
+	color:#333333;
+	width:75%;
+}
+
+#actionsRegion {
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+#terminatorDiv {
+	clear: both;
+}
+
+#annoFromDB{
+	text-align: left;
+}
+
+iframe {
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+h1 {
+	font-size: 26px;
+	color:#000000;
+}
+h2 {
+	font-size: 18px;
+	color:#000000;
+}
+h3 {
+	font-size: 24px;
+	color:#FFFFFF;
+}
+
+table {
+	background-color:rgba(255,255,255,0);
+	table-layout:fixed;
+	width:100%;
+}
+
+td {
+	text-align:center;
+	word-wrap:break-word;
+}
+
+.link-sidebar {
+
+}
+
+input {
+	visibility: hidden;
+
+}
+
+.uploadButton-sidebar {
+	text-align: center;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border:none;
+}
+.editButton-sidebar {
+	float: left;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border:none;
+	width: 62px;
+
+}
+
+.removeButton-sidebar {
+	float: right;
+	background-color: #777777;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+	width: 62px;
+}
+
+.saveButton-annotation {
+	width: 85%;
+	max-width: 146px;
+	background-color: #5fa2db;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+}
+
+
+.button-annotation {
+	width: 85%;
+	max-width: 146px;
+	background-color: #993333;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+}
+
+.submitButton-lineItem {
+	width: 90px;
+	border-radius: 3px;
+	background-color: #993333;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border: none;
+}
+
+.organizeButton-lineItem {
+	width: 90px;
+	border-radius: 3px;
+	background-color: #0b2a50;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 4px;
+	border: none;
+}
+
+.annotationSpace {
+	width: 96%;
+	min-height: 420px;
+	resize: none;
+	padding: 2px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	border-radius: 3px;
+	border: 1px solid #c7c7c7;
+}

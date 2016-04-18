@@ -1,156 +1,356 @@
-<!doctype html>
+<!--
+file:	evaluationExample.ejs
+author:
+date:	January 14, 2016 (updated)
+desc:
+-->
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link href="Layout.css" rel="stylesheet" type="text/css">
-<link href="Menu.css" rel="stylesheet" type="text/css">
-<link href="sidebar.css" rel="stylesheet" type="text/css">
-<link href="table.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Evaluation Examples</title>
+    <link href="layout.css" rel="stylesheet" type="text/css">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="alwaysOpenSidebar.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="alwaysOpenSidebar.js"></script>
+    <script>function grabAnnotation() {
+            var comment = document.getElementById("annotation").value;
+            //TEMPORARY MEASURE FOR TESTING, use F12 to view
+            console.log(comment);
+            //DO SOMETHING WITH THE COMMENT
+        }
+    </script>
 </head>
-<body>
 
+<body>
 <div id="NavBar">
-	<nav>
-    	<ul>
-            <li><a href="Home.html">Home</a></li>
- 	    <li><a href="myBinder.html">My Binder</a></li>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="myBinder.html">My Binder</a></li>
+            <li><a href="organizer.html">Organizer</a></li>
             <liCurrent><a href="evaluation.html">Evaluation</a></liCurrent>
-            <li><a href="workbench.html">Workbench</a></li>
-            <li><a href="LogOut.html">Log Out</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="logout.html">Log Out</a></li>
             <li><a href="help.html">Help</a></li>
         </ul>
-    </nav>   
+    </nav>
 </div>
 
-<nav class="main-menu">
-    <ul>
-        <li>
-            <a href="#">
-                <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text" id="hide">
-                    1. Dean's Recommendation
-                </span>
-            </a>
-          
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-                <i class="fa fa-laptop fa-2x"></i>
-                <span class="nav-text">
-                    2. Chair Recommendation
-                </span>
-            </a>
-            
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-               <i class="fa fa-list fa-2x"></i>
-                <span class="nav-text">
-                    3. Committee Recommendation
-                </span>
-            </a>
-            
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-               <i class="fa fa-folder-open fa-2x"></i>
-                <span class="nav-text">
-                    4. Prior Letters & Recommendations
-                </span>
-            </a>
-           
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-bar-chart-o fa-2x"></i>
-                <span class="nav-text">
-                    5. Self-Eval & Personal Statement
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-font fa-2x"></i>
-                <span class="nav-text">
-                    6. Current Resumé
-                </span>
-            </a>
-        </li>
-        <li>
-           <a href="#">
-               <i class="fa fa-table fa-2x"></i>
-                <span class="nav-text">
-                    7. List of Courses
-                </span>
-            </a>
-        </li>
-        <li>
-           <a href="#">
-                <i class="fa fa-map-marker fa-2x"></i>
-                <span class="nav-text">
-                    8. Pro Dev Materials
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-               <i class="fa fa-info fa-2x"></i>
-                <span class="nav-text">
-                    9. Letters (place sub-category here)
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-               <i class="fa fa-info fa-2x"></i>
-                <span class="nav-text">
-                    10. Student Evaluations
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-               <i class="fa fa-info fa-2x"></i>
-                <span class="nav-text">
-                    11. List of Supplemental Materials
-                </span>
-            </a>
-        </li>
-    </ul>
-</nav>
+<div id="contentAndSidebarRegion">
+    <div id='cssMenu'>
+        <ul>
+            <li class='active has-sub'><a href='#'><span>Dean's Recommendation</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
 
-<div class="page-container">
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Chair Recommendation</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
 
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Committee <br> Recommendation</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Prior Letters & Recommendation</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                               <table>
+                                   <tbody>
+                                   <tr>
+
+                                       <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                       <input id="files" type="file" name="files" accept="application/pdf">
+                                   </tr>
+                                   <tr>
+                                       <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                       <td>
+                                           <button class="editButton-sidebar">Edit</button>
+                                           <button class="removeButton-sidebar">Remove</button>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Self Eval & Personal Statement</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Current Resumé</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>List of Courses</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Professional Development Materials</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Letters</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>Student Evaluations</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                               <table>
+                                   <tbody>
+                                   <tr>
+
+                                       <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                       <input id="files" type="file" name="files" accept="application/pdf">
+                                   </tr>
+                                   <tr>
+                                       <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                       <td>
+                                           <button class="editButton-sidebar">Edit</button>
+                                           <button class="removeButton-sidebar">Remove</button>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='active has-sub'><a href='#'><span>List of Supplemental Materials</span></a>
+                <ul>
+                    <li class='last'>
+                        <a href='#'><span>
+                                <table>
+                                    <tbody>
+                                    <tr>
+
+                                        <label for="files" class="uploadButton-sidebar"><span>Add File</span></label>
+                                        <input id="files" type="file" name="files" accept="application/pdf">
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="0"><a class="link-sidebar" id="[fill in]" href="#">[filename].pdf</a></td>
+                                        <td>
+                                            <button class="editButton-sidebar">Edit</button>
+                                            <button class="removeButton-sidebar">Remove</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="contentPDFWithAnno">
+        <!--<script>
+            var obtainedPDF = JSON.parse('<%- JSON.stringify(documents[0]) %>');
+            var newSize = obtainedPDF.content.data.length;
+            var byteHolder = new Uint8Array(newSize);
+            for (var i = 0; i < newSize; i++) {
+                byteHolder[i] = obtainedPDF.content.data[i];
+            }
+            var bufferedHolder = byteHolder.buffer;
+            var blobbyAttempt = new Blob([bufferedHolder], {type : 'application/pdf'});
+            var urlForBlob = URL.createObjectURL(blobbyAttempt);
+            document.getElementById("contentPDFWithAnno").innerHTML = "<iframe src='" + urlForBlob + "'></iframe>";
+        </script>-->
+        <iframe src="file:demo_pdfs/CHAIRrec.pdf"></iframe>
+
+    </div>
+    <div id="contentAnnotation">
+        <div id="actionsRegion">
+            <textarea class="annotationSpace" id="annotation" placeholder="Enter annotations here..."></textarea>
+            <pre></pre>
+            <button class="saveButton-annotation" onclick="grabAnnotation()">Save</button>
+
+            <!--<script>
+                var obtainedAnno = JSON.parse('<%- JSON.stringify(annotations[0]) %>');
+                document.getElementById("annotation").value = obtainedAnno.annotationContent;
+            </script>-->
+
+        </div>
+    </div>
+    <div id="terminatorDiv">
+    </div>
 </div>
-<object data="ReviewChecklist.pdf" type="application/pdf" width="60%" height="500px">
- 
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="ReviewChecklist.pdf">click here to
-  download the PDF file.</a></p>
-  
-</object>
-
-<textarea rows="40" cols="30" left=1600x placeholder="" style="height: 495px; position:block">
-</textarea>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script type="text/javascript">
-</script>
-<script>
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("object").toggle();
-    });
-});
-</script>
-
 </body>
 </html>
 
-
-<script>
-function redirect() {
-  window.location.replace("welcome.html");
-  return false;
-}
-</script>
